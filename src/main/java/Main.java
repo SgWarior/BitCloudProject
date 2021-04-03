@@ -12,14 +12,15 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) throws IOException {
         Date date = new Date();
+        long time  = date.getTime() % 10000000;
         Path start = Paths.get("src/main/resources");
 
-        File newUsers = new File("newUser" + date.getTime() + ".txt");
-        File fHash    = new File("Hash"   + date.getTime() + ".txt");
-        File maxDeals = new File("MaxBuy" + date.getTime() + ".txt");
-        File maxSell = new File("MaxSell" + date.getTime() + ".txt");
+        File newUsers = new File("newUser" + time + ".txt");
+        File fHash    = new File("Hash"   + time + ".txt");
+        File maxDeals = new File("MaxBuy" + time+ ".txt");
+        File maxSell = new File("MaxSell" + time + ".txt");
 
-        File parsik = new File("Parsik"  +  date.getTime() + ".txt");
+        File parsik = new File("Parsik"  +  time + ".txt");
 
 
 
@@ -40,12 +41,13 @@ public class Main {
             Files.walkFileTree(start, new FindMaxSell(maxSellOutStream));
         }
 
-        try (final BufferedWriter output3 = new BufferedWriter(new FileWriter(parsik))) {
+     /*   try (final BufferedWriter output3 = new BufferedWriter(new FileWriter(parsik))) {
             Document doc = new Pars().doc;
             Elements element = doc.body().getAllElements();
             Document doc2 = Jsoup.parse(new Pars().url, 10000);
         for (Element elemen : element) {                System.out.println(elemen.toString());            }
         }
+     */
 
     }
 }
