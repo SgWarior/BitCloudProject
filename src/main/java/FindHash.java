@@ -20,7 +20,7 @@ public class FindHash extends SimpleFileVisitor {
                     if (fLine.contains("\"TxnType\": \"CREATOR_COIN\"") &&
                             sLine.contains("BC1YLgoGKCGAWNUfx9JSRoYUk1CWBsP3cB9FfAWxe8AQbnxhVDP8jSD")
                     ) {
-                        output.write(current.toString()+sLine);
+                        output.write(current.toString()+sLine.replace("\"", "").replace(",", ""));
                         output.newLine();
                     }
                 }
