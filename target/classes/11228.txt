@@ -1,0 +1,3065 @@
+Welcome to the BitClout Block Explorer
+Enter a BitClout transaction ID, public key, block hash, or block height.
+11228
+Browse the BitClout social network or learn more about the project here.
+Block Information
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Timestamp:Wed Mar 31 2021 06:37:40 GMT+0300 (Восточная Европа, летнее время)
+Height:11228
+Previous Block Hash:00000000009de6011f81e55d59905636c1b596ea62759be418953dea5ee14de5
+Transaction Merkle Root:10f82739a205e95e97f49369e818474b3a91fe780ba491d48140dc165e0d96d9
+Nonce:3422666287
+Version:0
+Block Transactions
+Transaction #0 (latest):
+Transaction ID:3JuET1R99si6sv8HiB94fHTnBBfXxTcsqhEoyeHc77eoPb18LZbaX8
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.031232150
+Total Output: 0.031231928
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 58,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLhvi2biPihFReNkqiFHmTJB2UBza1N5w9JVb7T7ecE6y5sxDWDh",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhvi2biPihFReNkqiFHmTJB2UBza1N5w9JVb7T7ecE6y5sxDWDh",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgnhJBcar6e32YTVJXkmS7ckn4GhBQiKVLkV7nTFieG6ewEDsqa",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 31232150,
+    "TotalOutputNanos": 31231928,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01d29aa22634acc776c9ab2f546889f6c30dff2490e536d5cf...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEULXKNGubkuui9MhWDBRjhHNvwJ4QejCfBwsfB9wdTAr5PR8fGA
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhvi2biPihFReNkqiFHmTJB2UBza1N5w9JVb7T7ecE6y5sxDWDh
+BitClout:0.031231928
+Transaction #1:
+Transaction ID:3JuEUfwC6NEHZ4CAtFgvTsono7PkFwbwkcb1BYLeNh6CfXivy8BmM5
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.005407020
+Total Output: 0.005406690
+Fees: 0.000000330
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 57,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLhZHJ3Wusap2x6KaZaNQbV4q8b3WBS2TdLRNMs7WNdi1AGhUeKM",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhZHJ3Wusap2x6KaZaNQbV4q8b3WBS2TdLRNMs7WNdi1AGhUeKM",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgV5kBe21fhL1xciXzwsuLRDFNpUBNsg1Ao3CRWQpSPyQbeKYRW",
+      "Metadata": "ParentPosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 5407020,
+    "TotalOutputNanos": 5406690,
+    "FeeNanos": 330,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "feae367ce8892d96b31c7aab3130daa6495e5fa9194a5ddbf5184d09c1208145",
+    "ParentPostHashHex": "80a8d3ad812fb5f585bd3a77b3962fc9745675d5dd43c66d49eb457b09651b5f"
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01aabb841b55b654b84eca5b6ad2d35b21e8756372b22cde0a...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEU2xrP3tgJ5tTAxHTdKUXeegPrWk4X8CnPyrRDUGwXkUfmzgruj
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhZHJ3Wusap2x6KaZaNQbV4q8b3WBS2TdLRNMs7WNdi1AGhUeKM
+BitClout:0.005406690
+Transaction #2:
+Transaction ID:3JuETvp2BVUmf8ma4JxGr7fBU4i3YR42YUVham5G2ETPa8ehD2qznF
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000099092
+Total Output: 0.000098870
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 56,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLhqhHMq6vJc5zmzQxiuuwn6QbhhADoc8ypmY5vfQT4XfFrG94AJ",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhqhHMq6vJc5zmzQxiuuwn6QbhhADoc8ypmY5vfQT4XfFrG94AJ",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLfgcUFGcvo1dZELLyPww3KehNHDEUCmCuuYWrD2NvUyWzUx1M6G",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 99092,
+    "TotalOutputNanos": 98870,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0135f5359920a2f27d287d4cce67591f7d4eea4f5684d4b96d...
+Transaction Inputs
+Input #0
+Transaction ID:3JuET9Y11ALyjsSoNuCcku88n2Y2gYJeaD7TZLpoEaWSGPYhWjLsoA
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhqhHMq6vJc5zmzQxiuuwn6QbhhADoc8ypmY5vfQT4XfFrG94AJ
+BitClout:0.000098870
+Transaction #3:
+Transaction ID:3JuESwSjFhC4xhJD4uCCoEm8jqJAVxn6yMwwNB7fZmt8RYNT71GL1J
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.065084689
+Total Output: 0.065084467
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 55,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi1vvHTKDd6x9CKakCZB2Fy3xLmxTfwp2RGHgRMH2CcJDyevYRr",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 65084689,
+    "TotalOutputNanos": 65084467,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0183b3278d56d6b12a57a9aa16570f5138c7ea314eb11700cd...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETjmpEgXdxvbJDwc7EPdcHYyk4FxCdhdW26N5gmdSiQhQPkajU7
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj
+BitClout:0.065084467
+Transaction #4:
+Transaction ID:3JuEU33VpH6SssV95E8XdMJ1FHGwNsMArXzG1QhxZ2Y5GV1X4xyd18
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.003089884
+Total Output: 0.003089663
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 54,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLiJqni8Uif488QKKHjoThiUeEUgTmMawREN7qPgm9Sg1NYjmjBz",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiJqni8Uif488QKKHjoThiUeEUgTmMawREN7qPgm9Sg1NYjmjBz",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi3GczxQzr7uhvxDRNbaax7hkZGiU9J9vhikz4R96WJmKszpvZH",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 3089884,
+    "TotalOutputNanos": 3089663,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "4b472af7b9d708717bb65ad71df60ecde99fddec3b400ea7723f3ff2b3d688e5"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01e1adea81b5c74ac578243f8ec26a9223434ccbe710385bdd...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUTAPwf2dzwUKRmnHqtDyNi5dNZm895rHakRZwuYD7TftizP9jV
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiJqni8Uif488QKKHjoThiUeEUgTmMawREN7qPgm9Sg1NYjmjBz
+BitClout:0.003089663
+Transaction #5:
+Transaction ID:3JuESskAeWzm3M68HccsYeoiX6DVaUf2xpq6i9hHxFGFrqc8L6Ypgp
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.003845145
+Total Output: 0.003844923
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 53,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLjLtacmXuxA8od5tNcMtKeEP3LTyNLzZPd2h7VTtQEu4quLmofv",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjLtacmXuxA8od5tNcMtKeEP3LTyNLzZPd2h7VTtQEu4quLmofv",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhDLHCMJYEvaVmPJgp9GdhaEzGPPpbesNC4jcWc8Uh3164XWHxx",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 3845145,
+    "TotalOutputNanos": 3844923,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:011cf44c3772991154277158ec058eb4fe04d3ff2ef452f1e4...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESxXKRXsUrkXQM8RLpG12NsKvozA5BcZ3BkSVBBjsWuDZRgdEFm
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjLtacmXuxA8od5tNcMtKeEP3LTyNLzZPd2h7VTtQEu4quLmofv
+BitClout:0.003844923
+Transaction #6:
+Transaction ID:3JuETrBixnSkZ62koojYsHt344DzxS1Xm3WHJnCdavgFUqs8EFSoDx
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.703347220
+Total Output: 0.703346999
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 52,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLh3AwMnvG5ZELPjuXwvbbWvG1ioXcTVWmcJ2hLh7ijLVqTxhips",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLh3AwMnvG5ZELPjuXwvbbWvG1ioXcTVWmcJ2hLh7ijLVqTxhips",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiP5X9YcUpfyqG72Q3kPHKoWUKZoNpBdoSmVTXPCAaD8wpiskdB",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 703347220,
+    "TotalOutputNanos": 703346999,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "480ed94d3490a9ac132853e134d7585b7982ec5d720731c2dff7526693190050"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01d4fa24417f39f09bf2c35863f581f2acec8896f55b4f48c1...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUMZwAG94v8B1LZ2w9dye8oYCoGveq5dwo883TaQHe6tkJXc8dy
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLh3AwMnvG5ZELPjuXwvbbWvG1ioXcTVWmcJ2hLh7ijLVqTxhips
+BitClout:0.703346999
+Transaction #7:
+Transaction ID:3JuETcaVepXhbLZogB6HG7ry7Vy4DFX97CdgR1oJTbZBZoe8oocr6B
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000135350
+Total Output: 0.000135063
+Fees: 0.000000287
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 51,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLiV3V1UR1GMea4MukT9dqkHHAZYqBrX7y7qnfuLUQgHNFQoVvkw",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiV3V1UR1GMea4MukT9dqkHHAZYqBrX7y7qnfuLUQgHNFQoVvkw",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 135350,
+    "TotalOutputNanos": 135063,
+    "FeeNanos": 287,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "735cbed76eff1b6e3f6374b423ad0890718de9df94acb08f9019b7bb0ddabf4c",
+    "ParentPostHashHex": ""
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01ee37124c035459f17250cc92ab5263cbc7a314f75ce9db66...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUYgc5aUBT6AuTZcjsCDyLjtU7iFYtT7KDimqx2GoqtXv98USH7
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiV3V1UR1GMea4MukT9dqkHHAZYqBrX7y7qnfuLUQgHNFQoVvkw
+BitClout:0.000135063
+Transaction #8:
+Transaction ID:3JuETRwigqUUyWzUTiANXAPvXChm58UXyD4hepxYfYvbbAxAD4GbKs
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.664810270
+Total Output: 0.664810036
+Fees: 0.000000234
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 50,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLgNH3gRGXpTxvox7DpEQA9YftmkBZaczBDkJWaLjL5kxhTiCRGG",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgNH3gRGXpTxvox7DpEQA9YftmkBZaczBDkJWaLjL5kxhTiCRGG",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiixTFGLyf9Czq21UmsUiGcntzwy4Z8StS2Lfp9t6pshce53nFp",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 664810270,
+    "TotalOutputNanos": 664810036,
+    "FeeNanos": 234,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "buy",
+    "BitCloutToSellNanos": 32494080,
+    "CreatorCoinToSellNanos": 0,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01b12de557d20193f60300f0beeada77e1af1eb5f1259e3c12...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEU5oXWw1B25PfB7DhUfq9jY32gNnDUhG6YortHK6ZXLk3Y9wdEb
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgNH3gRGXpTxvox7DpEQA9YftmkBZaczBDkJWaLjL5kxhTiCRGG
+BitClout:0.632315956
+Transaction #9:
+Transaction ID:3JuETk42ZfnQTW55QXRYaUmWBz8kRWQ1pXzunzg1kzMkJVABsTZDNG
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.098823896
+Total Output: 0.098823674
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 49,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLgBhuYGn4ZNUtyfCLfBndYTg8PvixYzBvseVofXGYXk79RtrmCu",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgBhuYGn4ZNUtyfCLfBndYTg8PvixYzBvseVofXGYXk79RtrmCu",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgUmZG6ibPXxVWSoZG1mvwJh1NRasrS8xi9UM6ZsUwbVGKn6NDa",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 98823896,
+    "TotalOutputNanos": 98823674,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:015ca1408e08a2fea7abfe99f453c9013b23d0212b4a5aba7e...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETSZpsra7hCVGgtFv1dPj53MYF1boMrgvLDvq1Y1yhgGzNa2w5d
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgBhuYGn4ZNUtyfCLfBndYTg8PvixYzBvseVofXGYXk79RtrmCu
+BitClout:0.098823674
+Transaction #10:
+Transaction ID:3JuETiXsRvprQuSN7c31emnNhBLkxUrBe22UJMve3DvgWGWRAKgBfs
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.022200949
+Total Output: 0.022200727
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 48,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLfreKquHi4A9CL4YZjfSbcq8kQXjzr4bkRvkbMzC5Ks19yRy5oM",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLfreKquHi4A9CL4YZjfSbcq8kQXjzr4bkRvkbMzC5Ks19yRy5oM",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiHGvzKsqukAmscoeLCqoWPhWHGJwFrCB2tddB6s9eT2nu5hdVr",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 22200949,
+    "TotalOutputNanos": 22200727,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:015f3b695bd066af9cc1d409233dd7eaf53aa23a05ba1c657c...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETTiJ6fmTP7eRSkvFzv6ofL9iDuiWkX49eQWxSHpKScrHP3m7Ns
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLfreKquHi4A9CL4YZjfSbcq8kQXjzr4bkRvkbMzC5Ks19yRy5oM
+BitClout:0.022200727
+Transaction #11:
+Transaction ID:3JuET4dMXF2Rrx2SntGNjGsGs4dgCZDyPbt7gULzd98r37FQesTE3G
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 2.724462438
+Total Output: 2.724462217
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 47,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLiWgKXYrpTkUZHyCbhfxU1bgJCQGcBvsQvPWuAwiVWnDFsvxudi",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiWgKXYrpTkUZHyCbhfxU1bgJCQGcBvsQvPWuAwiVWnDFsvxudi",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi6LpXTemAG8T9ptyWAkMywrjynwZcKjB5DkDXxrsG5kgAwAqxq",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 2724462438,
+    "TotalOutputNanos": 2724462217,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "e399c6e9daf11489c9a27737f9b8a256acc5446bade07c6f8ea81ee1f9d2bcaf"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0108c68983340f7788c57e30b29a779f81fff0369265fcc07c...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESodsxFxytqaZZJ13WwXKUVY4GiVux11L6jioSxMjhrYhYL1Eyi
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiWgKXYrpTkUZHyCbhfxU1bgJCQGcBvsQvPWuAwiVWnDFsvxudi
+BitClout:2.724462217
+Transaction #12:
+Transaction ID:3JuESodY4oBYdRShPPDWsCGdiD69yimYk8SXGZZLWeHMfKgEGtzcUG
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.114196542
+Total Output: 0.114196321
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 46,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLiP5X9YcUpfyqG72Q3kPHKoWUKZoNpBdoSmVTXPCAaD8wpiskdB",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiP5X9YcUpfyqG72Q3kPHKoWUKZoNpBdoSmVTXPCAaD8wpiskdB",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiP5X9YcUpfyqG72Q3kPHKoWUKZoNpBdoSmVTXPCAaD8wpiskdB",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 114196542,
+    "TotalOutputNanos": 114196321,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "782f998a5f302607787efcb041d0ade5fa531f623d445d94d1e14668f48e9db3"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01782f998a5f302607787efcb041d0ade5fa531f623d445d94...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETehi3Z6S3zjh3VaMxzr72FT6nf3LjLeoW24A197f4FsRJo9Zh7
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiP5X9YcUpfyqG72Q3kPHKoWUKZoNpBdoSmVTXPCAaD8wpiskdB
+BitClout:0.114196321
+Transaction #13:
+Transaction ID:3JuEUAzvizcjjYEQgWANZzm2BqBoZzXtqfRgiqUWkXxG35e8Wq7w7E
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.040690585
+Total Output: 0.040690364
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 45,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLhmSb6EECkkXSYmW74QmLiPUGb9Zw4vHP551Spi9DA7zv4BCDfS",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhmSb6EECkkXSYmW74QmLiPUGb9Zw4vHP551Spi9DA7zv4BCDfS",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLj2KVLAtch2suxKHpSMxMb6zpLfTngcxAxEVvSVwUDU8x27gdpK",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 40690585,
+    "TotalOutputNanos": 40690364,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "e627d63aa29a43a454e136847f8c9841af51fb086384368c67a59b0883c0e8a4"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:010204ddc4ba5d2ca4117af3daad95678cda64752c6aeac16e...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESkfHwaGv8kL9euhWQy4vHPVRGQANQTvHGkvfKZDiFeBRpYyzVv
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhmSb6EECkkXSYmW74QmLiPUGb9Zw4vHP551Spi9DA7zv4BCDfS
+BitClout:0.040690364
+Transaction #14:
+Transaction ID:3JuEUatTrceg9fTEgwwL59pfSRMopVJWaa6p5KzFK5bZGXYiC1dcp8
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000016110
+Total Output: 0.000015889
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 44,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLhU2sDKiW8vzoQhDaYuYZgVgPyxjLzauwzxmijUexAJSKVeGeMn",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhU2sDKiW8vzoQhDaYuYZgVgPyxjLzauwzxmijUexAJSKVeGeMn",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLj2KVLAtch2suxKHpSMxMb6zpLfTngcxAxEVvSVwUDU8x27gdpK",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 16110,
+    "TotalOutputNanos": 15889,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "c4ebdea136b78bbf0630750c3cd79e8acebbd23fe0cb2a6ef9f5ebb586b96e00"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01fc140d954c4d596a804cda2972ddbd0664875d714b1240c8...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUenisRMuZC4QSuQA74RN7XpfFS4LrhnykzDVnGFJSHEP7zsph1
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhU2sDKiW8vzoQhDaYuYZgVgPyxjLzauwzxmijUexAJSKVeGeMn
+BitClout:0.000015889
+Transaction #15:
+Transaction ID:3JuETeYWhTJ17yda7Md8mvQtG5U7o55TgANd8MU2i8btrqHEWMYrQf
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.149993829
+Total Output: 0.149993594
+Fees: 0.000000235
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 43,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLfmApx7c1XLE23rF7xU5PbYY5k9dX8zAJdrNnbcoc2UZRNMHX2n",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLfmApx7c1XLE23rF7xU5PbYY5k9dX8zAJdrNnbcoc2UZRNMHX2n",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLfmApx7c1XLE23rF7xU5PbYY5k9dX8zAJdrNnbcoc2UZRNMHX2n",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 149993829,
+    "TotalOutputNanos": 149993594,
+    "FeeNanos": 235,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "buy",
+    "BitCloutToSellNanos": 149550434,
+    "CreatorCoinToSellNanos": 0,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:015b13ea0e67fe65aaf2d989fd43a018731c444d76e377b708...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETRtBPZvSCYUvMVqpvaWWQFtcLRKgR3XrtNUJvi2WUpmLctHrZY
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLfmApx7c1XLE23rF7xU5PbYY5k9dX8zAJdrNnbcoc2UZRNMHX2n
+BitClout:0.000443160
+Transaction #16:
+Transaction ID:3JuEUCTaqV4pAiVgeacxxs4TUkya91YSQvLKckAnSwkfZDG3tvCaL3
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.049973009
+Total Output: 0.049972787
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 42,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLgLY72pnLuoXdwXbXdzwTgXFhsY9TtUY49mwZqEMoXqdfkFpKGw",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgLY72pnLuoXdwXbXdzwTgXFhsY9TtUY49mwZqEMoXqdfkFpKGw",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhLwihH4cdEdFBKRNbvjie4SxC8Hfro9nxECt5x1pSa3qGWLYFW",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 49973009,
+    "TotalOutputNanos": 49972787,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01ccd375dfcfc2cdb2d29e059f3b42ed3249c90cc14ca335a0...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUHyj3dbEBEDNdTjcZMtjGvUpEV8EBiEJZnvJkNZhJYxwRDCAfw
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgLY72pnLuoXdwXbXdzwTgXFhsY9TtUY49mwZqEMoXqdfkFpKGw
+BitClout:0.049972787
+Transaction #17:
+Transaction ID:3JuEUXC5UHTD4aUtVRDFwg9HmAAQPJQGEj6cV1vjkdpVhEXL3Eab26
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 69.556280939
+Total Output: 69.556280669
+Fees: 0.000000270
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 41,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLgAx6Tq313U2ysD8AgqULmWJreLt3Tgv3AchDcWjMspUEHnEprw",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgAx6Tq313U2ysD8AgqULmWJreLt3Tgv3AchDcWjMspUEHnEprw",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiLPnbyWJeHdCH422qZmeKwKPGr2mFM5vWDV25qjybUYA2HiP1s",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 69556280939,
+    "TotalOutputNanos": 69556280669,
+    "FeeNanos": 270,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "buy",
+    "BitCloutToSellNanos": 69556180693,
+    "CreatorCoinToSellNanos": 0,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:02c80098541a03f584adc7bc65859f89d731c6a82dc92593a0...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUFrWbAY3y2UuoTdPBdUcKTfmvRXjeuZ6CsteH5McgnY78C1x3q
+Index:0
+Input #1
+Transaction ID:3JuEUFrWbAY3y2UuoTdPBdUcKTfmvRXjeuZ6CsteH5McgnY78C1x3q
+Index:1
+Transaction Outputs
+Output #0
+Public Key:BC1YLgAx6Tq313U2ysD8AgqULmWJreLt3Tgv3AchDcWjMspUEHnEprw
+BitClout:0.000099976
+Transaction #18:
+Transaction ID:3JuETT8k8WBuYYhe6N4SfxhTc4hU6FtQeYTatUgmPaPzCEKkP7wx1Y
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.477762211
+Total Output: 0.477761976
+Fees: 0.000000235
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 40,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLhpXTr2MckRZzL1n5aTYa1GJMBNfSnx8jBokN1THwoQ7trV66Kh",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhpXTr2MckRZzL1n5aTYa1GJMBNfSnx8jBokN1THwoQ7trV66Kh",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiuzo5gf5N6U45iMYVKaMue8Lk4ezJNtnmdSNA4Yi3awUGhGNcj",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 477762211,
+    "TotalOutputNanos": 477761976,
+    "FeeNanos": 235,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "sell",
+    "BitCloutToSellNanos": 0,
+    "CreatorCoinToSellNanos": 1203606915,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01d093009470989d1905735f24ceea570e8c0757f590488308...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUKdU95k4sRRzzWsbXj5pqWdDojTYtcuFNMT5kk6qvRHaYydi1w
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhpXTr2MckRZzL1n5aTYa1GJMBNfSnx8jBokN1THwoQ7trV66Kh
+BitClout:0.349007811
+Transaction #19:
+Transaction ID:3JuETzg5V2zK4ocBQ2hdBsHL1qP6esFzwpA9CPhf7FkfrLjTcrdt63
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.009992920
+Total Output: 0.009992699
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 39,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLiPy9Su8Gvn6PVUeYgU5MKzdDFvyLwHG5BoHrgr2gcopVTKQi4i",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiPy9Su8Gvn6PVUeYgU5MKzdDFvyLwHG5BoHrgr2gcopVTKQi4i",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiPy9Su8Gvn6PVUeYgU5MKzdDFvyLwHG5BoHrgr2gcopVTKQi4i",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 9992920,
+    "TotalOutputNanos": 9992699,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "236f9d7758647dfb05454e2558988f9875aaf94dc63889bc1560ebabbb7fe144"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:013108584a0b6d603b123acd4977afee980019aeac3658e72b...
+Transaction Inputs
+Input #0
+Transaction ID:3JuET7NC5rab84Rx5VFzPhYCHP5Wz6c2wRWvxPvJRXK66PZF3wcmju
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiPy9Su8Gvn6PVUeYgU5MKzdDFvyLwHG5BoHrgr2gcopVTKQi4i
+BitClout:0.009992699
+Transaction #20:
+Transaction ID:3JuETWmRbDs1doPdYE2AHKFpJjrACN1jxocs2WqtvFLfvAR1Fn9KFp
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.006502758
+Total Output: 0.006502537
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 38,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLfjJZw2UubTYmqV2z3fVJLYbwZkLPLS2fPfod1kahdGMPqzWzEW",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLfjJZw2UubTYmqV2z3fVJLYbwZkLPLS2fPfod1kahdGMPqzWzEW",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhH6JtEvRBeMmpDEtbAXLf6SiTcdThDZ6gF8Z4npPuZVQBJu7bP",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 6502758,
+    "TotalOutputNanos": 6502537,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "9cf0b063c6f7a8d1f558d127eb36d615e7e058d6aa3e05e1b4f26d494ce399a7"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0141a2f42042ba21f950150379a4eca569ccb2fc79818bee06...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETEgKMcCKufQ8vuvbYirEPWHaUyZNfdp4nVCjT9pyTrcgnhHNAQ
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLfjJZw2UubTYmqV2z3fVJLYbwZkLPLS2fPfod1kahdGMPqzWzEW
+BitClout:0.006502537
+Transaction #21:
+Transaction ID:3JuETUctyZDYYiUPTLoR67pKGsjsshdxfzrXdgqnJdifKW2gJFvVA1
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 7.398962416
+Total Output: 7.398962017
+Fees: 0.000000399
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 37,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLh3WstLLLzBXcoQY5EaEnLzgiYKEyvCYWnnGkDRNityc5USPzfg",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLh3WstLLLzBXcoQY5EaEnLzgiYKEyvCYWnnGkDRNityc5USPzfg",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgxAoyjpnP12KHqJKQ4udWwyJovyetf35qfjWJ48xuwf4Chwg17",
+      "Metadata": "ParentPosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 7398962416,
+    "TotalOutputNanos": 7398962017,
+    "FeeNanos": 399,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "614a95cb4fb65d135e20477a0d43d1631c601575c3b5abc27849cca47e718ada",
+    "ParentPostHashHex": "638d8231c708bd88546b7982567fd855d23c421fd0b0ed5fad7681ca76986dfb"
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0164f5f20e64f89da26902860d4e6a80a1d6616ae4e5d6f2dd...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETWEdGvGSuHscnLTi4weDGZwrWKqM4v7pHQKU2ATpW5iyeAAjhg
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLh3WstLLLzBXcoQY5EaEnLzgiYKEyvCYWnnGkDRNityc5USPzfg
+BitClout:7.398962017
+Transaction #22:
+Transaction ID:3JuETH8161UDyiz2PpPsVFqgvFXFzRY15LzZqChYYDbtfX5XUNEtfT
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000100223
+Total Output: 0.000099932
+Fees: 0.000000291
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 36,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLi6TX2YzkyauBhTcY8vEysvdZPHSWronLxYUCMCE9yweHr7p1h7",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLi6TX2YzkyauBhTcY8vEysvdZPHSWronLxYUCMCE9yweHr7p1h7",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi6LpXTemAG8T9ptyWAkMywrjynwZcKjB5DkDXxrsG5kgAwAqxq",
+      "Metadata": "ParentPosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 100223,
+    "TotalOutputNanos": 99932,
+    "FeeNanos": 291,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "472eedd132c86b2c0bbe170a4240e6e104d81997529b7366bb5be0fc5ef0d68b",
+    "ParentPostHashHex": "e399c6e9daf11489c9a27737f9b8a256acc5446bade07c6f8ea81ee1f9d2bcaf"
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01dc6771f7c7619eb0cc084a1ca7908be922eaa0f14bb26fcf...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUQqeT7MXyGJ72u1YFTvDqwxPp6X6eo47XFUvfhtC7g7ssQymFb
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLi6TX2YzkyauBhTcY8vEysvdZPHSWronLxYUCMCE9yweHr7p1h7
+BitClout:0.000099932
+Transaction #23:
+Transaction ID:3JuEUGZdzSMHCLTDKEu7vzZFC6rpRYB3Zwv8CbkxJPU7jtzLWDApDz
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 3.781362486
+Total Output: 3.781362264
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 35,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLgW6ExDx7TJnpa8bn1a7BDp7w5x7c2jmihU7S4K9jvk9fN6Fqsh",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgW6ExDx7TJnpa8bn1a7BDp7w5x7c2jmihU7S4K9jvk9fN6Fqsh",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgjbVpbyJyqJzMBFDzTfqXfxWkqyJD6WwP29zXC6Z72Qbv26tL2",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 3781362486,
+    "TotalOutputNanos": 3781362264,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:014499553f07706ca3a49900aecb95a899cf5f788d2dda7e59...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETFyzGwurrveRaj6JVkBwA4T9DQfGRzf3bFq4w2zGLz9E25Qg1f
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgW6ExDx7TJnpa8bn1a7BDp7w5x7c2jmihU7S4K9jvk9fN6Fqsh
+BitClout:3.781362264
+Transaction #24:
+Transaction ID:3JuET1jwEAwBTE2iknPo7KHf5FQbdQjJCARhq2ynMAntdbRpx23SRJ
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 2.240252388
+Total Output: 2.240252153
+Fees: 0.000000235
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 34,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLjCUFrarMeUHjgfrnjfEx6tWReN98zrDdeekP9DRGTAdHFrW2UB",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjCUFrarMeUHjgfrnjfEx6tWReN98zrDdeekP9DRGTAdHFrW2UB",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLit3VtyBJoHTBdZsLWMnxVxeHz3CJZrMQAMwY93cidqmvZxQKEV",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 2240252388,
+    "TotalOutputNanos": 2240252153,
+    "FeeNanos": 235,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "sell",
+    "BitCloutToSellNanos": 0,
+    "CreatorCoinToSellNanos": 71946463,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:011c9680f16392a22fc70e59fec17d79bd1afb908417e7111e...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESxMxcfJLbmWfsxKgi6QfWa5BsKNANHUNrtACwnCRNDAPKRgqQM
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjCUFrarMeUHjgfrnjfEx6tWReN98zrDdeekP9DRGTAdHFrW2UB
+BitClout:0.000099739
+Transaction #25:
+Transaction ID:3JuESyNzdDhvKhENssAishe9jH6pUTgU8mxE5zYG9VRTx4gxfMZjbb
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 1.810033933
+Total Output: 1.810033712
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 33,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLiqAqGcGARnBDTZ1oUpu7nsrMbxUeswzLu95KSndpHnvMFkGazY",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiqAqGcGARnBDTZ1oUpu7nsrMbxUeswzLu95KSndpHnvMFkGazY",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiqAqGcGARnBDTZ1oUpu7nsrMbxUeswzLu95KSndpHnvMFkGazY",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 1810033933,
+    "TotalOutputNanos": 1810033712,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "466dc9158ee7ccd36c4f0ec427558bba7ff878131383a46706b79d29f810bd01"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01466dc9158ee7ccd36c4f0ec427558bba7ff878131383a467...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETGnjKY7oWoFYUv1qNVW8yf2mT6A3EJH2qSdD4hb2sfUpKatFMP
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiqAqGcGARnBDTZ1oUpu7nsrMbxUeswzLu95KSndpHnvMFkGazY
+BitClout:1.810033712
+Transaction #26:
+Transaction ID:3JuETKBWPYdN5VmvSKNvPAqKpRvdEUdoUP1vXyEpzSRGrcHpSsmDzz
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000085270
+Total Output: 0.000085049
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 32,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLguL4pbCyR15cYFyTZgMw5ZQmBEr3gjfGfBoBb49XjMwjJF8Yr5",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLguL4pbCyR15cYFyTZgMw5ZQmBEr3gjfGfBoBb49XjMwjJF8Yr5",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLh1J2e59kRnR8JE7EyXAnsx39JdujTriyrfRaNf47speLsesgEm",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 85270,
+    "TotalOutputNanos": 85049,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "9ce39a0d56215090e96f51a84da0fe1e0f43d0654d0afc0c5c42746a20f6fc26"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:014b858a34028802854f3b66cc07af3e38e25b3d4f74ffafc8...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETK2pTFDC6mQdAjNo8mFvCiZV2A1oDXFgkzHjYAmjeNMfv9qrrT
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLguL4pbCyR15cYFyTZgMw5ZQmBEr3gjfGfBoBb49XjMwjJF8Yr5
+BitClout:0.000085049
+Transaction #27:
+Transaction ID:3JuETrJxHVQweAXgAxxgoNUQ2tdTHFA8zKqyQFUm5ocK1432EyiKJx
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.113832346
+Total Output: 0.113832124
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 31,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLfuCnbU9dR4vPnm6CmcE6N2Mp1R1Mnu3bWzpzWYduricingUXfJ",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLfuCnbU9dR4vPnm6CmcE6N2Mp1R1Mnu3bWzpzWYduricingUXfJ",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgigKxKXxxaDpxwtuk2oJ3ettP8HKABcHwpEoNEbvdGC8PoYc3D",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 113832346,
+    "TotalOutputNanos": 113832124,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01bc7bd33e5e3f57ec5e8a86fa2f6139cfb38c504e1bc4132f...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUAnHNAdmd6JSHgehoDT82UQU96RrGrffek5p8i7ZcLKAewoYnp
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLfuCnbU9dR4vPnm6CmcE6N2Mp1R1Mnu3bWzpzWYduricingUXfJ
+BitClout:0.113832124
+Transaction #28:
+Transaction ID:3JuEUSMi8MGF6K1gnZpBxVRg2bo5Zq4TELiZTKai9VsYyGa8L1DWJa
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.005833369
+Total Output: 0.005833072
+Fees: 0.000000297
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 30,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLgU5huzwcXspvhkTrjQkJSxuxF9sDtJjB3izxkPRorDQh6ouRpg",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgU5huzwcXspvhkTrjQkJSxuxF9sDtJjB3izxkPRorDQh6ouRpg",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhgBHFGJnKd8tMN4ZfposSJ4YthcPgUQQRwsLgPnzHLbutTPNUb",
+      "Metadata": "ParentPosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 5833369,
+    "TotalOutputNanos": 5833072,
+    "FeeNanos": 297,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "dfda05816a42d84c4df005d9f5fd75facd34b5cce7ebff4fc6c1beb25cb5c8ad",
+    "ParentPostHashHex": "77e6934eba01f6eb7392af77b92db44de510121de1b2a762bc96ee4b539148c9"
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0155b850d4f03e2eb6be7f06e2886a9baa8daaa92e397dc44a...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETPXKdK9CWSDFcuLaCfmZft45TnhTyh5GY2ACC4fNUzFWm7by3P
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgU5huzwcXspvhkTrjQkJSxuxF9sDtJjB3izxkPRorDQh6ouRpg
+BitClout:0.005833072
+Transaction #29:
+Transaction ID:3JuETs3u5RmXpDXdwK7b6mgYtvQtVWiMxy3ZJc9bsDZ32hYynjMUxn
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.024384517
+Total Output: 0.024384296
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 29,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLi9hJezKxfWAsxCh5yohr5GjUmVKqxQ5wTuD1k5fNxgTstQPUYA",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLi9hJezKxfWAsxCh5yohr5GjUmVKqxQ5wTuD1k5fNxgTstQPUYA",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgBuYanJzGeFKRLhHDnTAuRx4JxhKkafjwBh1tW8JR3BX35fUd1",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 24384517,
+    "TotalOutputNanos": 24384296,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "b0e0ac86c5cdee5b8141d94f3b4541e88f0d1b8a62cb500c00c7fa8ca31dd92c"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:019be5c6684defd2807bab5c7fe7e5cfc117270a460f20f1fd...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETvRuxiCAX3nsvrrJHUbSTrWMYLL18Lbt28KrseSoGtBrWKVkoJ
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLi9hJezKxfWAsxCh5yohr5GjUmVKqxQ5wTuD1k5fNxgTstQPUYA
+BitClout:0.024384296
+Transaction #30:
+Transaction ID:3JuETGaptQPQDAMWPejphB4EkUo8DgTqGAGsF2E3e8WCjKN4uF72YA
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:UPDATE_PROFILE
+Transaction Metadata:
+Parsed Fields
+Total Input: 1.292269553
+Total Output: 1.292262631
+Fees: 0.000006922
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 28,
+  "TxnType": "UPDATE_PROFILE",
+  "TransactorPublicKeyBase58Check": "BC1YLi8BiXcGxN6DskYPLqo3mmKMLozAMZNKxMHFaoxp23cTj8V3sz2",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLi8BiXcGxN6DskYPLqo3mmKMLozAMZNKxMHFaoxp23cTj8V3sz2",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "8mkU8yaVLs",
+      "Metadata": "ProfilePublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 1292269553,
+    "TotalOutputNanos": 1292262631,
+    "FeeNanos": 6922,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": {
+    "ProfilePublicKeyBase58Check": "",
+    "NewUsername": "",
+    "NewDescription": "",
+    "NewProfilePic": "data:image/jpeg;base64,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",
+    "NewCreatorBasisPoints": 1000,
+    "NewStakeMultipleBasisPoints": 12500,
+    "IsHidden": false
+  },
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01ea73298220e241325e5311e815e27b8474081293747db4f9...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUX2Ri8U4v1o5e31kXXFjK6m3PbZ1CAxWa2tE7A9HWn1etN6gJA
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLi8BiXcGxN6DskYPLqo3mmKMLozAMZNKxMHFaoxp23cTj8V3sz2
+BitClout:1.292262631
+Transaction #31:
+Transaction ID:3JuET8u6aKWUkNvEuPouCvKz7sas3ooLm46yyFSd11amm48ZUfZm21
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.033099541
+Total Output: 0.033099319
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 27,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLiC6wzSrNAD4fnwU31X7dcLvUzCN4FHQPzfAkKFzdxKep1CUnQq",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiC6wzSrNAD4fnwU31X7dcLvUzCN4FHQPzfAkKFzdxKep1CUnQq",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLg3zMXL8745Sdo72evWk7rQmwVFP5yeHy1Yong5sQGgDs52tSoG",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 33099541,
+    "TotalOutputNanos": 33099319,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0130bb09d053611783ca2810a4c1a4fdc7b8aac46c45c3655a...
+Transaction Inputs
+Input #0
+Transaction ID:3JuET7EUhAnQ6cR1qYXZF17sUJHBqrtjmsKWkMwH2ufLJdErTghEjc
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiC6wzSrNAD4fnwU31X7dcLvUzCN4FHQPzfAkKFzdxKep1CUnQq
+BitClout:0.033099319
+Transaction #32:
+Transaction ID:3JuETZbgfZJP5y74BztfpUvnQxcNtHR4xqvwedHQNZ2QemVqA1CEun
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.026413323
+Total Output: 0.026413101
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 26,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLjSfvrdLDAaYQyHyrGxL2qR6AcjCBhyk6zvh6R2UrVKjdAuEJea",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjSfvrdLDAaYQyHyrGxL2qR6AcjCBhyk6zvh6R2UrVKjdAuEJea",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgD7JQgB8uYXpxDmEEePnzRporT8TBzd22edSfJjTH3ZfEZ6JET",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 26413323,
+    "TotalOutputNanos": 26413101,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01a06505aa98ea713a33167c597587a8e5fd7c6ad6dc8559b6...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETxQnVtREbrhupLq8CJCXUDhct77MbdthyGCCohkaED3AbFWHzU
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjSfvrdLDAaYQyHyrGxL2qR6AcjCBhyk6zvh6R2UrVKjdAuEJea
+BitClout:0.026413101
+Transaction #33:
+Transaction ID:3JuEUUF6TSodFFUygJKRhkXeK1mmfoaHkvkvNDcGAP7oTFjgDSuHS4
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:PRIVATE_MESSAGE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.002501903
+Total Output: 0.002501342
+Fees: 0.000000561
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 25,
+  "TxnType": "PRIVATE_MESSAGE",
+  "TransactorPublicKeyBase58Check": "BC1YLgWhcCMcPfjWKCtgcuqhQ9doqTXNu7PAnbD7aFfUeXFEBwBfQwP",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgWhcCMcPfjWKCtgcuqhQ9doqTXNu7PAnbD7aFfUeXFEBwBfQwP",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj",
+      "Metadata": "RecipientPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 2501903,
+    "TotalOutputNanos": 2501342,
+    "FeeNanos": 561,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": {
+    "TimestampNanos": 1617151784213075700
+  },
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0196549e39c784a659a5eedf9c90a1667c60f6aa3213752a94...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETsyiF47jKqV92cVQiiywyT6zeGkimgrxWPbrM8KCMuy1Q1Fq7T
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgWhcCMcPfjWKCtgcuqhQ9doqTXNu7PAnbD7aFfUeXFEBwBfQwP
+BitClout:0.002501342
+Transaction #34:
+Transaction ID:3JuESzakWRnRWcWFVVq3S3opTj5aWjCVJ979S7Sx8QbbZdMieMRZRS
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000099436
+Total Output: 0.000099158
+Fees: 0.000000278
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 24,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLhbEZkBgW32A8kh86UKUBGVysMXxWfB2TmhWofU5jprR2jdyhJg",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhbEZkBgW32A8kh86UKUBGVysMXxWfB2TmhWofU5jprR2jdyhJg",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 99436,
+    "TotalOutputNanos": 99158,
+    "FeeNanos": 278,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "21a141c84fe67d13571cfcf3d81baa9e282eab9b8a62692b5066b331fa4201cd",
+    "ParentPostHashHex": ""
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01db8146ac41579aed9ef6e5e2ad000a4607d6cb111124a8c4...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUQSgQdQgqPRBpX9Wi8esxBGz8cqb88mcCfJef9fGxxsST1DthQ
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhbEZkBgW32A8kh86UKUBGVysMXxWfB2TmhWofU5jprR2jdyhJg
+BitClout:0.000099158
+Transaction #35:
+Transaction ID:3JuETPmTLhqZNt2WuZuzgKG7nMk3Ka3HoLd7PpbTU5fwQjwPQNWb1E
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 6.454671747
+Total Output: 6.454671525
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 23,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLjPXUyXT9ACWcKbTjSqPSc6Eb8P45wp9Xk3pEEovAChxfZbLnDs",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjPXUyXT9ACWcKbTjSqPSc6Eb8P45wp9Xk3pEEovAChxfZbLnDs",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi2r4Kn2vDb2ThCrbtG3cASKYnzqAvyv2qwCshbS3NojYxQNudp",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 6454671747,
+    "TotalOutputNanos": 6454671525,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:018b144a86777e351a079b56ecdcba1caa4e52da2998981645...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETo2K7aSVvwxY22w6wEUPR7D3Q8Y5phqzQF9xaKKWdxgx7LoWKP
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjPXUyXT9ACWcKbTjSqPSc6Eb8P45wp9Xk3pEEovAChxfZbLnDs
+BitClout:6.454671525
+Transaction #36:
+Transaction ID:3JuET9Y11ALyjsSoNuCcku88n2Y2gYJeaD7TZLpoEaWSGPYhWjLsoA
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000099314
+Total Output: 0.000099092
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 22,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLhqhHMq6vJc5zmzQxiuuwn6QbhhADoc8ypmY5vfQT4XfFrG94AJ",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhqhHMq6vJc5zmzQxiuuwn6QbhhADoc8ypmY5vfQT4XfFrG94AJ",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLfgYx3GP1BEwcmrfrG76f4Kd4yhhgQYzLgKRZWsqU246Ju3cHVJ",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 99314,
+    "TotalOutputNanos": 99092,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01ce5bb2582039dcf646aafeef8e68a2af9416f182fea7cc95...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUJes1VXjaVSuba1SCEQmvJNDDXs2PPXEU8hHXi36v8LJ1tokZm
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhqhHMq6vJc5zmzQxiuuwn6QbhhADoc8ypmY5vfQT4XfFrG94AJ
+BitClout:0.000099092
+Transaction #37:
+Transaction ID:3JuEU5EXNX1rZd2S152G8vEFR56RMK7N4HRjUgz7SuHRyDsPhYUBmh
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:BASIC_TRANSFER
+Transaction Metadata:
+Parsed Fields
+Total Input: 1.927202308
+Total Output: 1.927202084
+Fees: 0.000000224
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 21,
+  "TxnType": "BASIC_TRANSFER",
+  "TransactorPublicKeyBase58Check": "BC1YLhx6KqpikgJr76EABCzVzyuxftDiSr1uHwfJ3qqHUivuMryRevX",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLijh1Q8uY4FkCvpUDPMHKDSHvNUghZUFVzs74goVih4YeUc6aNK",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhx6KqpikgJr76EABCzVzyuxftDiSr1uHwfJ3qqHUivuMryRevX",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 1927202308,
+    "TotalOutputNanos": 1927202084,
+    "FeeNanos": 224,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01e84aebd2023d0f5f110677a31dfefe36d403f7d487971b45...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUW5Km8YYYC1bvpHbr54mAnTU2Sf8vDSGmeecmbU9Syc1u8T9Nu
+Index:1
+Transaction Outputs
+Output #0
+Public Key:BC1YLijh1Q8uY4FkCvpUDPMHKDSHvNUghZUFVzs74goVih4YeUc6aNK
+BitClout:0.000100000
+Output #1
+Public Key:BC1YLhx6KqpikgJr76EABCzVzyuxftDiSr1uHwfJ3qqHUivuMryRevX
+BitClout:1.927102084
+Transaction #38:
+Transaction ID:3JuETTiJ6fmTP7eRSkvFzv6ofL9iDuiWkX49eQWxSHpKScrHP3m7Ns
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.022201171
+Total Output: 0.022200949
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 20,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLfreKquHi4A9CL4YZjfSbcq8kQXjzr4bkRvkbMzC5Ks19yRy5oM",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLfreKquHi4A9CL4YZjfSbcq8kQXjzr4bkRvkbMzC5Ks19yRy5oM",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiG53nZ5FTkdy4ugr4Sz4aFEacdvywrbS1znCuZXfuCYRxXsmZG",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 22201171,
+    "TotalOutputNanos": 22200949,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0129b2ae5e03b15534d558bde2e359e8521fd707c65e917189...
+Transaction Inputs
+Input #0
+Transaction ID:3JuET48qbwCMgs9QYkHaoM6uf5FWNGpCindk94FefJRr1dps3LS3Zy
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLfreKquHi4A9CL4YZjfSbcq8kQXjzr4bkRvkbMzC5Ks19yRy5oM
+BitClout:0.022200949
+Transaction #39:
+Transaction ID:3JuEUTAPwf2dzwUKRmnHqtDyNi5dNZm895rHakRZwuYD7TftizP9jV
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.003090105
+Total Output: 0.003089884
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 19,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLiJqni8Uif488QKKHjoThiUeEUgTmMawREN7qPgm9Sg1NYjmjBz",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiJqni8Uif488QKKHjoThiUeEUgTmMawREN7qPgm9Sg1NYjmjBz",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi3P5VRwVaABUCrQQHEEUoQGoAUpcS272Rb16MDH1Uy8Kg9q3sX",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 3090105,
+    "TotalOutputNanos": 3089884,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "cc646298df694acb119d7b7500dbf7e60168f1c82caa4552a65c3fcdc759ab4b"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0137483b23220fe72dd685aa3e20fff9b170f96f44e5c7a40e...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETA7q13CxysA9eUyQa3EqHffPPjvVMAVk1tfdj8HCvXWebAXz4M
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiJqni8Uif488QKKHjoThiUeEUgTmMawREN7qPgm9Sg1NYjmjBz
+BitClout:0.003089884
+Transaction #40:
+Transaction ID:3JuET4B4nNWbdmuooaZaVRuvtdYmmBvhYRzihLsdivpfy5rBm6vG1K
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 2.280934207
+Total Output: 2.280933971
+Fees: 0.000000236
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 18,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLjSu6tuutTRK5HSZ38GUTf3BobmvCyh3q3BQWMr4UPncBfD6PNa",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjSu6tuutTRK5HSZ38GUTf3BobmvCyh3q3BQWMr4UPncBfD6PNa",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgoiHh2zQ6LTPc9ftvnLmgeCXvZTp2V3ZbJFjY5kEa4TT1DVMvK",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 2280934207,
+    "TotalOutputNanos": 2280933971,
+    "FeeNanos": 236,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "sell",
+    "BitCloutToSellNanos": 0,
+    "CreatorCoinToSellNanos": 3817601431,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:018529b73db47f2d3f4e256f7da469be348bc4b581836bbd94...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETkRBunSYqn2ZCFLehEqU5WSr1a2yWcV3F3nzXJoGXMw9ipB74r
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjSu6tuutTRK5HSZ38GUTf3BobmvCyh3q3BQWMr4UPncBfD6PNa
+BitClout:0.080386937
+Transaction #41:
+Transaction ID:3JuETZMeVNNk1Tgv28VA26snFwW6EWVaQiCk24Ft9khR1Evi59k7Sp
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.686157771
+Total Output: 0.686157536
+Fees: 0.000000235
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 17,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLhEETYrWhmHP7mQc3YicMzofjA5oGdSW9wntMu1PYfpp4SgQpv3",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhEETYrWhmHP7mQc3YicMzofjA5oGdSW9wntMu1PYfpp4SgQpv3",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 686157771,
+    "TotalOutputNanos": 686157536,
+    "FeeNanos": 235,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "15c9576d1ba784c1d02f7748c45bd08b97cd46a76899b0b1532e9d7bd3b4a711",
+    "ParentPostHashHex": ""
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0119a4bbf5a2e62e78a8929f1895c0c78a1b0c8f95a7777f22...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESw4kNgVLnn5tDb78nUZYWvgRiQ2kD28tKK5mf7WSQKCgQb6YcH
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhEETYrWhmHP7mQc3YicMzofjA5oGdSW9wntMu1PYfpp4SgQpv3
+BitClout:0.686157536
+Transaction #42:
+Transaction ID:3JuEUTzeJxT3tAH1CGBeuqxGLqfJSH6ZLCW8VEZtDJAEGDeym5479Y
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000064906
+Total Output: 0.000064520
+Fees: 0.000000386
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 16,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLh8L3jy6m5mVijUkwtsYqSVkjay6G1SnXA4anN7zKezTiE1m9Dd",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLh8L3jy6m5mVijUkwtsYqSVkjay6G1SnXA4anN7zKezTiE1m9Dd",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 64906,
+    "TotalOutputNanos": 64520,
+    "FeeNanos": 386,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "e3917515b57df0825549549c7356e43521592ff54b454c35a6e2e6f11bc77f88",
+    "ParentPostHashHex": ""
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0116c56ea48fe05e2ec64ce4b908ec169415f190bd9e14b9e7...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESuoP1UjRSjg7bx2FKTbKAfpqJAHKnbr7paAZvLkJBtUrGkKUaF
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLh8L3jy6m5mVijUkwtsYqSVkjay6G1SnXA4anN7zKezTiE1m9Dd
+BitClout:0.000064520
+Transaction #43:
+Transaction ID:3JuEUDvruj6e1vrZ9Ztdfnbk1pY8QfwHxqBnHdYLNkUvbiPk6XWeWY
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.098809494
+Total Output: 0.098809272
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 15,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLhaH4gVgtj8WcHSPpBxY1cSazphuWyko1KrpMbshbJkZ4Hh5WR1",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhaH4gVgtj8WcHSPpBxY1cSazphuWyko1KrpMbshbJkZ4Hh5WR1",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLjXHyNRt6b99B81PsQoUVV6rGYFusnGquc7x9BfPAB66oDxMMfm",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 98809494,
+    "TotalOutputNanos": 98809272,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01b5548391a699d9087a933dd2086f360485bec96d46d12ada...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEU7dZ8vFzFbNi7jCXcSsT9CVh7Nk4jaS8ejAKdcmfdMrZeEFNsA
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhaH4gVgtj8WcHSPpBxY1cSazphuWyko1KrpMbshbJkZ4Hh5WR1
+BitClout:0.098809272
+Transaction #44:
+Transaction ID:3JuETjmpEgXdxvbJDwc7EPdcHYyk4FxCdhdW26N5gmdSiQhQPkajU7
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.065084911
+Total Output: 0.065084689
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 14,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhBgV1tJLYobN8DkiL1XraX5dAEEaLW45irBTRVq7NeH7qvN1R6",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 65084911,
+    "TotalOutputNanos": 65084689,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:017c7ebd01c37ce42babd61e4d97050fa29b41f0f63336e867...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETgbnAdLzRGJ96boipjnFcdYNcbSoj22jF1Eooo9BvSXQn8s3Eh
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLjCgWaGBWYKcSBz8u81Ck7uWpUnhzLqdHESSoJb5RD2gt7UiUtj
+BitClout:0.065084689
+Transaction #45:
+Transaction ID:3JuETkcyExKmoir46heQcei6WSUCg8SrtMKqff7e2SJ3tMkZd34mqz
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 1.672140138
+Total Output: 1.672139917
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 13,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLh3YCF8mZjzHmWiVdK1ruvLu2oXnRp39xgvmfzy89bceizBU7jk",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLh3YCF8mZjzHmWiVdK1ruvLu2oXnRp39xgvmfzy89bceizBU7jk",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLhpm1aWXmzk89UsbNtipNVe7vPCbzjquqwvVexM7c3x94jQSkSR",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 1672140138,
+    "TotalOutputNanos": 1672139917,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "f9f78975f822115b5a84e828c5e2e4524da3b40f895cc4cd7037a723ad8ee881"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01de99a049c13b407ac02c163cb071df54d2e20830613e4282...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEURojvZBG6N8M5KevQ7T7iZ99Us2Jrip6qG47hT1cNRaC9gdC9h
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLh3YCF8mZjzHmWiVdK1ruvLu2oXnRp39xgvmfzy89bceizBU7jk
+BitClout:1.672139917
+Transaction #46:
+Transaction ID:3JuETSZpsra7hCVGgtFv1dPj53MYF1boMrgvLDvq1Y1yhgGzNa2w5d
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.098824118
+Total Output: 0.098823896
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 12,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLgBhuYGn4ZNUtyfCLfBndYTg8PvixYzBvseVofXGYXk79RtrmCu",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgBhuYGn4ZNUtyfCLfBndYTg8PvixYzBvseVofXGYXk79RtrmCu",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgUWyu5T2x4xQnMNs5VTQduCo3cxRVfJ17zP9zyGGBoz9HvcJCx",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 98824118,
+    "TotalOutputNanos": 98823896,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:016897afd7125f846b7d6938e3d04813216b75e84afbd3452d...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETXqPuZ4c2vEzq33WPz6spDyTrp3YcaJ8eE3ZwDHcmQjzUkv9yd
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgBhuYGn4ZNUtyfCLfBndYTg8PvixYzBvseVofXGYXk79RtrmCu
+BitClout:0.098823896
+Transaction #47:
+Transaction ID:3JuETLLxpjnStYUqPNSJeYTjcyGcvdHpyU5Dz1mfmi3ViDTPddVNEi
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.027054182
+Total Output: 0.027053960
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 11,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLgwyzch9aJEZmSvwnt38qfGjcjF2Ux6SHHEeiARqi1AhZLtwmoE",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgwyzch9aJEZmSvwnt38qfGjcjF2Ux6SHHEeiARqi1AhZLtwmoE",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgYqai3v5J8WqfUqBYTEGu2fE2iK2nk2jaw3w1RFEvvhsSgCcLL",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 27054182,
+    "TotalOutputNanos": 27053960,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01137a3b91652506cfd7a90a2c84c635ce91049f949ff75075...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEStMFDShCu6ssWFAYyGEvM8vcNB5y4h8vDDK3hc2UJBymb7G6Xh
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgwyzch9aJEZmSvwnt38qfGjcjF2Ux6SHHEeiARqi1AhZLtwmoE
+BitClout:0.027053960
+Transaction #48:
+Transaction ID:3JuEU8vAwTRXw9itkeW4tajqG8pzvgNJGR4N41rP4Gek855n1yUj98
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.065605664
+Total Output: 0.065605388
+Fees: 0.000000276
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 10,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLihUMc1eLM8Toqrvc14M1LcJL587c9cc1pYGBFJbK3yJ9KvSZt2",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLihUMc1eLM8Toqrvc14M1LcJL587c9cc1pYGBFJbK3yJ9KvSZt2",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgxAoyjpnP12KHqJKQ4udWwyJovyetf35qfjWJ48xuwf4Chwg17",
+      "Metadata": "ParentPosterPublicKeyBase58Check"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi9uCo7FPSt7njzzMjz8DsArEWWmLhjDSFmL695PyiKC1um5Win",
+      "Metadata": "MentionedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 65605664,
+    "TotalOutputNanos": 65605388,
+    "FeeNanos": 276,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "b8405525fff24c220cedb1484ecc2fda5d4c0cd22cab74d834a846968bda26aa",
+    "ParentPostHashHex": "638d8231c708bd88546b7982567fd855d23c421fd0b0ed5fad7681ca76986dfb"
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:011c32d1a6d9acdad389241e8a1614bcc3d38e38456041bf6d...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESxC1iXBpYGfjiQw1iBFKwvqujY9TcHrv61FKYgoAj7s8HEQvZ8
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLihUMc1eLM8Toqrvc14M1LcJL587c9cc1pYGBFJbK3yJ9KvSZt2
+BitClout:0.065605388
+Transaction #49:
+Transaction ID:3JuEULXKNGubkuui9MhWDBRjhHNvwJ4QejCfBwsfB9wdTAr5PR8fGA
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.031232371
+Total Output: 0.031232150
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 9,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLhvi2biPihFReNkqiFHmTJB2UBza1N5w9JVb7T7ecE6y5sxDWDh",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhvi2biPihFReNkqiFHmTJB2UBza1N5w9JVb7T7ecE6y5sxDWDh",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLj2aZQSpi3dMXeK6km8mmzmWmYSV7ayYabBEiLHTvo264ka5N5S",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 31232371,
+    "TotalOutputNanos": 31232150,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "27d6d37f5c0ebaa57ed8fce6414b94928cbd057604490d54b60eb0e634155369"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:014ae4e8af7529dd7bc57af41e5d80a72c7aff00ba452c42dd...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETJknqvmVGq7XdL97zupqianHVFq3q4v2LFSSMPS25aevDcaGqd
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhvi2biPihFReNkqiFHmTJB2UBza1N5w9JVb7T7ecE6y5sxDWDh
+BitClout:0.031232150
+Transaction #50:
+Transaction ID:3JuETCQiAth4A7GewnNtqEgQC1hrDoNn1XqHk8NfTGx4LbZHc6S2ns
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 3.999325396
+Total Output: 3.999325161
+Fees: 0.000000235
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 8,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLiLhoJyjqYnVZ25c8Yv1LMrwtZ5eSHbPzFFtyaRNS4rzTSdrDjj",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLiLhoJyjqYnVZ25c8Yv1LMrwtZ5eSHbPzFFtyaRNS4rzTSdrDjj",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgMseBDu4bFRg5fjK6KYJcnY5V2MD4LwyvuesH1HhVbTvSzCoiV",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 3999325396,
+    "TotalOutputNanos": 3999325161,
+    "FeeNanos": 235,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "buy",
+    "BitCloutToSellNanos": 1305272231,
+    "CreatorCoinToSellNanos": 0,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01a85bdeb9db24f2302c4498f5b5dca2d937d98d84b5d714c3...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEU1vDnp8haonqCgJFEvg2MM2v5rRHhutSg6jm7KYRz5qc58Gpyy
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLiLhoJyjqYnVZ25c8Yv1LMrwtZ5eSHbPzFFtyaRNS4rzTSdrDjj
+BitClout:2.694052930
+Transaction #51:
+Transaction ID:3JuEUX7NWa1AeYhDUnKm9TtDGDFaEfGiWxui1V5Hw2DJ34YLqkKXXY
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:UPDATE_PROFILE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.400527959
+Total Output: 0.400524266
+Fees: 0.000003693
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 7,
+  "TxnType": "UPDATE_PROFILE",
+  "TransactorPublicKeyBase58Check": "BC1YLgKhEWaMP5xr1qaWg8rGk6qFfyHoNCimmUbTtBgbhYm3hiUf5dW",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgKhEWaMP5xr1qaWg8rGk6qFfyHoNCimmUbTtBgbhYm3hiUf5dW",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "8mkU8yaVLs",
+      "Metadata": "ProfilePublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 400527959,
+    "TotalOutputNanos": 400524266,
+    "FeeNanos": 3693,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": {
+    "ProfilePublicKeyBase58Check": "",
+    "NewUsername": "WOLLOW",
+    "NewDescription": "FOLLOW US",
+    "NewProfilePic": "data:image/jpeg;base64,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",
+    "NewCreatorBasisPoints": 1000,
+    "NewStakeMultipleBasisPoints": 12500,
+    "IsHidden": false
+  },
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01b75e0da8068e8966caffab62cd2cea24bf791915d10b9be6...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEU8XbQeBeVSkkJoG7HUGkSsgD9gm94UGoBS7zWdHRpntoMaAeL3
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgKhEWaMP5xr1qaWg8rGk6qFfyHoNCimmUbTtBgbhYm3hiUf5dW
+BitClout:0.400524266
+Transaction #52:
+Transaction ID:3JuETHUGpZBue6twAffaE4D2M9CREkTXE3796hYaTZTuGtW3jeWkh3
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.010546539
+Total Output: 0.010546306
+Fees: 0.000000233
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 6,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLgGrTAsdBJWTDPsbRY4wiDVNEYKKaJ2Keg5F19ut6PyYwGohdLB",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgGrTAsdBJWTDPsbRY4wiDVNEYKKaJ2Keg5F19ut6PyYwGohdLB",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiTi7ygtBrufwYXDnWHnwZmLW6PBLRH49FxLgbF1Dvs6ZtWWV1T",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 10546539,
+    "TotalOutputNanos": 10546306,
+    "FeeNanos": 233,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "buy",
+    "BitCloutToSellNanos": 325800,
+    "CreatorCoinToSellNanos": 0,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01dfb5a33527eafd2dd09e70f7690cc76784e612005fae049b...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUSJ5ZicSJjX18iSaEDMTeHSU8ZG2sttbzpbC3rwesTGGRDKtF8
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgGrTAsdBJWTDPsbRY4wiDVNEYKKaJ2Keg5F19ut6PyYwGohdLB
+BitClout:0.010220506
+Transaction #53:
+Transaction ID:3JuETHHR24bZyQFwndVWcBPeLy86rh6g4zYtLzJqJ41YFZqDiVM2us
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.028869809
+Total Output: 0.028869587
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 5,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLgdvLMZRWJfMK7VXcD1KXqBjiZZmrbGRTUJBaAtFxLmKVHe4juA",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgdvLMZRWJfMK7VXcD1KXqBjiZZmrbGRTUJBaAtFxLmKVHe4juA",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLgWtd4ug7RNTGRaaujPe9dcw6vtZVDXHKk3EgAhMdudMfT7QxgP",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 28869809,
+    "TotalOutputNanos": 28869587,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:010222288846393da78d48b0ccf09ce537e5abb0d4ac27fcec...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESkiDTjQPnAZwQo9bc71LXTvExKgbzaj9tEBJXXWoaUhMMHsiGL
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLgdvLMZRWJfMK7VXcD1KXqBjiZZmrbGRTUJBaAtFxLmKVHe4juA
+BitClout:0.028869587
+Transaction #54:
+Transaction ID:3JuESvv2wP5VmagTjmA98QrjVdF6rt8SDBNykEav6AicB4AoJJXS5v
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:CREATOR_COIN
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.157633507
+Total Output: 0.157633274
+Fees: 0.000000233
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 4,
+  "TxnType": "CREATOR_COIN",
+  "TransactorPublicKeyBase58Check": "BC1YLhoSSNGBcch2dta7do5fzfy1kDNRwhgnQ2YtaUEUqULEgJ7693k",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhoSSNGBcch2dta7do5fzfy1kDNRwhgnQ2YtaUEUqULEgJ7693k",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLiXrF9mwZ6qDzaX6wSE2Yumb3WeCxL9866m28zrbC7dL2buutGZ",
+      "Metadata": "CreatorPublicKey"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 157633507,
+    "TotalOutputNanos": 157633274,
+    "FeeNanos": 233,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": {
+    "OperationType": "buy",
+    "BitCloutToSellNanos": 32626746,
+    "CreatorCoinToSellNanos": 0,
+    "BitCloutToAddNanos": 0
+  },
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0104bf3b07729580e23cef9a9fe2233e1e8de39f1bf0578e03...
+Transaction Inputs
+Input #0
+Transaction ID:3JuESmryYGyEuM3WuG8dbxtryijsaS11Q9A4r3kWVuY9Zn9cuTeJSD
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhoSSNGBcch2dta7do5fzfy1kDNRwhgnQ2YtaUEUqULEgJ7693k
+BitClout:0.125006528
+Transaction #55:
+Transaction ID:3JuETRjPTJcLnNTs59jEx7gCdQxHhLhyFpjPahCZu2D5F6PUqFkBSr
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:FOLLOW
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.031965810
+Total Output: 0.031965588
+Fees: 0.000000222
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 3,
+  "TxnType": "FOLLOW",
+  "TransactorPublicKeyBase58Check": "BC1YLg5YYUEBeSijLCcbkiuxQxA8LPwYgawgNVjHuJpEve92fjZRARi",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLg5YYUEBeSijLCcbkiuxQxA8LPwYgawgNVjHuJpEve92fjZRARi",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLh3AwMnvG5ZELPjuXwvbbWvG1ioXcTVWmcJ2hLh7ijLVqTxhips",
+      "Metadata": "FollowedPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 31965810,
+    "TotalOutputNanos": 31965588,
+    "FeeNanos": 222,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": {
+    "IsUnfollow": false
+  },
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01e6083c42bcdccfb303d64f54ccdb651a5ed34bb55331dd6b...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUV5amgCakpGvC9d27RZoMKFUmCjS3fmJq1Qp3if17KtYXdwe6o
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLg5YYUEBeSijLCcbkiuxQxA8LPwYgawgNVjHuJpEve92fjZRARi
+BitClout:0.031965588
+Transaction #56:
+Transaction ID:3JuEU8QyzG2CZbAvGcYbLoyWTf34CMwhwFvrX98EDsce3voanvBMRY
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:LIKE
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.308144956
+Total Output: 0.308144735
+Fees: 0.000000221
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 2,
+  "TxnType": "LIKE",
+  "TransactorPublicKeyBase58Check": "BC1YLhTwNQCTCsyKXk34iGSD9voncCy6vuGJ6SnswiHKVS3jVXq6Eyq",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhTwNQCTCsyKXk34iGSD9voncCy6vuGJ6SnswiHKVS3jVXq6Eyq",
+      "Metadata": "BasicTransferOutput"
+    },
+    {
+      "PublicKeyBase58Check": "BC1YLi6LpXTemAG8T9ptyWAkMywrjynwZcKjB5DkDXxrsG5kgAwAqxq",
+      "Metadata": "PosterPublicKeyBase58Check"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 308144956,
+    "TotalOutputNanos": 308144735,
+    "FeeNanos": 221,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": {
+    "IsUnlike": false,
+    "PostHashHex": "1d641a6b784acb663f0415b60661e17f1d356ccb32c30c5a9e5ad38e7352f7ec"
+  },
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:013b35320b6630398bb99387cccceb3504e24c287a7b79fca6...
+Transaction Inputs
+Input #0
+Transaction ID:3JuETBr6y3W6hYoWzkqrKLN8uDHEKAgrRUFYojwC9fCUKPB1B8HsTG
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhTwNQCTCsyKXk34iGSD9voncCy6vuGJ6SnswiHKVS3jVXq6Eyq
+BitClout:0.308144735
+Transaction #57:
+Transaction ID:3JuETUoazLr9C83gV9nvnwySTSXTJ3pzmS8CYqk5XnJJG47e6tyXz1
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:SUBMIT_POST
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.010955902
+Total Output: 0.010955583
+Fees: 0.000000319
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 1,
+  "TxnType": "SUBMIT_POST",
+  "TransactorPublicKeyBase58Check": "BC1YLhhedoWhAuMAD5seTEekH3iqQ5kj1EBMJzaLbBaQqors2v2t1a2",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLhhedoWhAuMAD5seTEekH3iqQ5kj1EBMJzaLbBaQqors2v2t1a2",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 10955902,
+    "TotalOutputNanos": 10955583,
+    "FeeNanos": 319,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": {
+    "PostHashBeingModifiedHex": "61b5b845a8ea2e963b653fe1728c9aa58fc9457971c59625cce3b7ee53eef9e8",
+    "ParentPostHashHex": ""
+  },
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:01c4ca1bf51b8e9b9acc594e8a787f81716b1e28ce280bf4f5...
+Transaction Inputs
+Input #0
+Transaction ID:3JuEUESSfsuTQFhFeTNrWCKFJT4G3kM4atp1VCBcJuBDQJFXgEbQMn
+Index:0
+Transaction Outputs
+Output #0
+Public Key:BC1YLhhedoWhAuMAD5seTEekH3iqQ5kj1EBMJzaLbBaQqors2v2t1a2
+BitClout:0.010955583
+Transaction #58:
+Transaction ID:3JuEUHwoM9igxu5EVgfjh8RThZDdEi8bkRyeZkUbYMDuBtuk19s1F7
+Block Hash:0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd
+Transaction Type:BLOCK_REWARD
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000000000
+Total Output: 1.000024399
+Fees: 0.000000000
+Raw Metadata
+{
+  "BlockHashHex": "0000000000405f8586f48648cd1e327ff627a7baa47c743092e9300dad481efd",
+  "TxnIndexInBlock": 0,
+  "TxnType": "BLOCK_REWARD",
+  "TransactorPublicKeyBase58Check": "8mkU8yaVLs",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLigKLfJaDh5j1dVyZFovHfoZVWoeSN8H1cmD5n5edejqhMvLLaF",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 0,
+    "TotalOutputNanos": 1000024399,
+    "FeeNanos": 0,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:0001038c19d9cd110c82bd6241b67c6d8351c00bad1f152b20...
+Transaction Inputs
+Transaction Outputs
+Output #0
+Public Key:BC1YLigKLfJaDh5j1dVyZFovHfoZVWoeSN8H1cmD5n5edejqhMvLLaF
+BitClout:1.000024399
