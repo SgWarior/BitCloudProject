@@ -31,7 +31,7 @@ public class FindMaxSell extends SimpleFileVisitor {
                             resultList.add(lo);
                     }
                 }
-                Collections.sort(resultList);
+                Collections.sort(resultList,Collections.reverseOrder());
                 listWithTopBuy = resultList.stream().limit(10).collect(Collectors.toList());
             }
 
@@ -43,9 +43,9 @@ public class FindMaxSell extends SimpleFileVisitor {
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
         List<Long> superFinalResult = listWithTopBuy.stream().limit(10).collect(Collectors.toList());
 
-
         for (Long aLong : superFinalResult) {
-            output.write(String.valueOf(aLong));
+            long long2 = aLong/1_000_000_000;
+            output.write(aLong +"   " + long2);
             output.newLine();
         }
 
