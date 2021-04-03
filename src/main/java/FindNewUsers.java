@@ -17,7 +17,9 @@ public class FindNewUsers extends SimpleFileVisitor {
                 while (reader.ready()){
                     String tmp = reader.readLine();
                     if (tmp.contains("NewUsername")&& !tmp.contains("NewUsername\": \"\"")) {
-                        output.write("@"+tmp);
+                        String tmp2 = tmp.trim().replace("\"NewUsername\": \"", "");
+                        String tmp3 = tmp2.trim().replace("\",","");
+                        output.write("@"+tmp3);
                         output.newLine();
                     }
                 }
