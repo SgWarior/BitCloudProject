@@ -12,7 +12,7 @@ public class FindMaxSell extends SimpleFileVisitor {
     public FindMaxSell (BufferedWriter output) {
         this.output = output;
     }
-    static List<Long> listWithTopBuy;
+    static List<Long> listWithTopBuy = new ArrayList<>();
 
     @Override
     public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
@@ -31,16 +31,16 @@ public class FindMaxSell extends SimpleFileVisitor {
                             resultList.add(lo);
                     }
                 }
-                Collections.sort(resultList,Collections.reverseOrder());
-                listWithTopBuy = resultList.stream().limit(10).collect(Collectors.toList());
+                resultList.sort(Collections.reverseOrder());
+                listWithTopBuy.addAll(resultList);
             }
-
         }
         return FileVisitResult.CONTINUE;
     }
 
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
+        listWithTopBuy.sort(Collections.reverseOrder());
         List<Long> superFinalResult = listWithTopBuy.stream().limit(10).collect(Collectors.toList());
 
         for (Long aLong : superFinalResult) {

@@ -24,14 +24,18 @@ public class Main {
 
 
 
-
+/*
         try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers))) {
             Files.walkFileTree(start, new FindNewUsers(usersOutStream));
         }
 
+ */
+/*
         try (final BufferedWriter hashFinder = new BufferedWriter(new FileWriter(fHash))) {
             Files.walkFileTree(start, new FindHash(hashFinder));
         }
+
+ */
 
         try (final BufferedWriter maxBuyOutStream = new BufferedWriter(new FileWriter(maxDeals))) {
             Files.walkFileTree(start, new FindMaxBuy(maxBuyOutStream));

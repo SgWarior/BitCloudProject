@@ -12,7 +12,7 @@ public class FindMaxBuy extends SimpleFileVisitor {
     public FindMaxBuy (BufferedWriter output) {
         this.output = output;
     }
-    static List<Long> listWithTopBuy;
+    static List<Long> listWithTopSell= new ArrayList<>();
 
     @Override
     public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
@@ -30,8 +30,8 @@ public class FindMaxBuy extends SimpleFileVisitor {
                         resultList.add(lo);
                     }
                 }
-                Collections.sort(resultList, Collections.reverseOrder());
-                listWithTopBuy = resultList.stream().limit(10).collect(Collectors.toList());
+                resultList.sort(Collections.reverseOrder());
+                listWithTopSell.addAll(resultList);
             }
 
         }
@@ -40,7 +40,8 @@ public class FindMaxBuy extends SimpleFileVisitor {
 
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
-        List<Long> superFinalResult = listWithTopBuy.stream().limit(10).collect(Collectors.toList());
+        listWithTopSell.sort(Collections.reverseOrder());
+        List<Long> superFinalResult = listWithTopSell.stream().limit(10).collect(Collectors.toList());
 
         for (Long aLong : superFinalResult) {
             long long2 = aLong/1_000_000_000;
