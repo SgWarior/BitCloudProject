@@ -1,4 +1,4 @@
 *.txt
 src/main/resources/*.txt
 /WhaleNamesByHash.java
-src/main/java/WhaleNamesByHash.java
+/src/main/java/WhaleNamesByHash.java
