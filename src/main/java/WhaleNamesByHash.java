@@ -21,6 +21,14 @@ public class WhaleNamesByHash {
                 whaleMap.putIfAbsent(whale, "FindME");
     }
 
+    public static void writeWhales() throws IOException {
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(wileFile.toFile()))) {
+            for (Map.Entry<String, String> entry : whaleMap.entrySet()) {
+                writer.write(entry.getKey()+" "+entry.getValue());
+                writer.newLine();
+            }
+        }
 
+    }
 
 }
