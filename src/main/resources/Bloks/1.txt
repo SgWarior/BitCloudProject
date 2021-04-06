@@ -1,0 +1,55 @@
+Welcome to the BitClout Block Explorer
+Enter a BitClout transaction ID, public key, block hash, or block height.
+1
+Browse the BitClout social network or learn more about the project here.
+Block Information
+Block Hash:00000016c72096930787c7e7de4ad069198c2137feddeecbe6a9ec4d61cb6870
+Timestamp:Mon Mar 01 2021 13:30:33 GMT+0200 (Восточная Европа, стандартное время)
+Height:1
+Previous Block Hash:5567c45b7b83b604f9ff5cb5e88dfc9ad7d5a1dd5818dd19e6d02466f47cbd62
+Transaction Merkle Root:fd8e08af2ae7f62cdc9676ca3d9d6df9fa801c2263c494503ded47b4164bb88c
+Nonce:88348
+Version:0
+Block Transactions
+Transaction #0 (latest):
+Transaction ID:3JuETkEpP92uwnvTDYvhB5uSyAXqG8fDBaUA9UasAijChf3ZAkUPDT
+Block Hash:00000016c72096930787c7e7de4ad069198c2137feddeecbe6a9ec4d61cb6870
+Transaction Type:BLOCK_REWARD
+Transaction Metadata:
+Parsed Fields
+Total Input: 0.000000000
+Total Output: 1.000000000
+Fees: 0.000000000
+Raw Metadata
+{
+  "BlockHashHex": "00000016c72096930787c7e7de4ad069198c2137feddeecbe6a9ec4d61cb6870",
+  "TxnIndexInBlock": 0,
+  "TxnType": "BLOCK_REWARD",
+  "TransactorPublicKeyBase58Check": "8mkU8yaVLs",
+  "AffectedPublicKeys": [
+    {
+      "PublicKeyBase58Check": "BC1YLgKZyfgyNntCMXAZYExM8JooYqrYvVsrR8d8XVxorDruYFdq31p",
+      "Metadata": "BasicTransferOutput"
+    }
+  ],
+  "BasicTransferTxindexMetadata": {
+    "TotalInputNanos": 0,
+    "TotalOutputNanos": 1000000000,
+    "FeeNanos": 0,
+    "UtxoOpsDump": ""
+  },
+  "BitcoinExchangeTxindexMetadata": null,
+  "CreatorCoinTxindexMetadata": null,
+  "UpdateProfileTxindexMetadata": null,
+  "SubmitPostTxindexMetadata": null,
+  "LikeTxindexMetadata": null,
+  "FollowTxindexMetadata": null,
+  "PrivateMessageTxindexMetadata": null,
+  "SwapIdentityTxindexMetadata": null
+}
+Raw Transaction Hex:000102559949a3a9bce770aa526b1006935f3f896645a4622a...
+Transaction Inputs
+Transaction Outputs
+Output #0
+Public Key:BC1YLgKZyfgyNntCMXAZYExM8JooYqrYvVsrR8d8XVxorDruYFdq31p
+BitClout:1.000000000
