@@ -18,9 +18,9 @@ public class MaxBuy extends SimpleFileVisitor {
 
     @Override
     public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
+        //System.out.println(file.toString());
         if (attrs.isRegularFile()){
             File current = new File(file.toString());
-
             try(BufferedReader reader = new BufferedReader(new FileReader(current))){
                 while (reader.ready()){
                     String tmp = reader.readLine();
@@ -34,18 +34,18 @@ public class MaxBuy extends SimpleFileVisitor {
                         if(typeTransaction.equals("buy")){ raw = Long.parseLong(reader.readLine().replace("    \"BitCloutToSellNanos\": ", "").replace(",", ""));}
                         else {reader.readLine(); raw = Long.parseLong(reader.readLine().replace("    \"CreatorCoinToSellNanos\": ", "").replace(",", ""));}
                         long amount = raw/1_000_000_000;
-                        if(amount < 1) continue;
-
-
-                        String answer = initiator+"  "+ typeTransaction +"  "+ target + "for "+amount + " BitClouds";
-                        if(typeTransaction.equals("sell")) buyTree.put(amount, answer);
-                        else sellTree.put(amount, answer);
+                        if(amount <10) {continue;}else{ }
+                        String answer = initiator+"  "+ typeTransaction +"  "+ target + " for "+amount + " BitClouds";
+                        if(typeTransaction.equals("sell")){ buyTree.put(amount, answer); WhaleNamesByHash.addWhales(initiator);
+                            System.out.println(buyTree.size() +" ==? " +WhaleNamesByHash.whaleMap.size());}
+                        else {sellTree.put(amount, answer); }
                     }
 
                 }
             }
 
         }
+
         return FileVisitResult.CONTINUE;
     }
 
@@ -55,13 +55,13 @@ public class MaxBuy extends SimpleFileVisitor {
         for (Map.Entry<Long, String> e: sellTree.entrySet()
              ) {sell.write(sellTree.get(e.getKey()));
              sell.newLine();
+
         }
         for (Map.Entry<Long, String> e: buyTree.entrySet()
         ) {buy.write(buyTree.get(e.getKey()));
             buy.newLine();
         }
-
-
+        WhaleNamesByHash.writeWhales();
         return FileVisitResult.CONTINUE;
     }
 
