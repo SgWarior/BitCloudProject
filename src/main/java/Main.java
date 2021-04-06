@@ -1,35 +1,30 @@
-import org.joda.time.LocalTime;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import java.io.*;
-import java.nio.file.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Date;
 
-
-public class Main {
+ public class Main {
     public static void main(String[] args) throws IOException {
         Date date = new Date();
         long time  = date.getTime() % 10000000;
-        Path start = Paths.get("src/main/resources");
+        Path start = Paths.get("src/main/resources/Bloks");
 
         File newUsers = new File("newUser" + time + ".txt");
         File fHash    = new File("Hash"   + time + ".txt");
-        File maxDeals = new File("MaxBuy" + time+ ".txt");
+        File maxBuy = new File("MaxBuy" + time+ ".txt");
         File maxSell = new File("MaxSell" + time + ".txt");
 
         File parsik = new File("Parsik"  +  time + ".txt");
 
-
-
-/*
         try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers))) {
             Files.walkFileTree(start, new FindNewUsers(usersOutStream));
         }
 
- */
+
 /*
         try (final BufferedWriter hashFinder = new BufferedWriter(new FileWriter(fHash))) {
             Files.walkFileTree(start, new FindHash(hashFinder));
@@ -37,13 +32,16 @@ public class Main {
 
  */
 
-        try (final BufferedWriter maxBuyOutStream = new BufferedWriter(new FileWriter(maxDeals))) {
-            Files.walkFileTree(start, new FindMaxBuy(maxBuyOutStream));
+        try (final BufferedWriter maxBuyStream = new BufferedWriter(new FileWriter(maxBuy));
+             final BufferedWriter maxSellStream = new BufferedWriter(new FileWriter(maxSell))) {
+            Files.walkFileTree(start, new MaxBuy(maxBuyStream,maxSellStream));
         }
 
-        try (final BufferedWriter maxSellOutStream = new BufferedWriter(new FileWriter(maxSell))) {
+     /*   try (final BufferedWriter maxSellOutStream = new BufferedWriter(new FileWriter(maxSell))) {
             Files.walkFileTree(start, new FindMaxSell(maxSellOutStream));
         }
+
+      */
 
      /*   try (final BufferedWriter output3 = new BufferedWriter(new FileWriter(parsik))) {
             Document doc = new Pars().doc;

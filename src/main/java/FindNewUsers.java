@@ -2,12 +2,17 @@ import java.io.*;
 import java.nio.file.FileVisitResult;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayDeque;
+
 
 public class FindNewUsers extends SimpleFileVisitor {
     BufferedWriter output;
+
+    private static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
     public FindNewUsers(BufferedWriter output) {
         this.output = output;
     }
+
 
     @Override
     public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
@@ -17,12 +22,25 @@ public class FindNewUsers extends SimpleFileVisitor {
                 while (reader.ready()){
                     String tmp = reader.readLine();
                     if (tmp.contains("NewUsername")&& !tmp.contains("NewUsername\": \"\"")) {
-                        String tmp2 = tmp.trim().replace("\"NewUsername\": \"", "");
-                        String tmp3 = tmp2.trim().replace("\",","");
-                        output.write("@"+tmp3);
-                        output.newLine();
+                        String tmp2 = tmp.trim().replace("\"NewUsername\": \"", "@").replace("\",","");
+                        usersList.add(tmp2);
                     }
                 }
+            }
+        }
+        return FileVisitResult.CONTINUE;
+    }
+
+    @Override
+    public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
+        String intro = "Welcome New users to Bitclout!\n";
+        String outro= "\nFollow and start investing @WhaleRadar to get more profit!";
+        StringBuilder sb = new StringBuilder();
+        while (!usersList.isEmpty()){
+            if(sb.length()==0)sb.append("\n").append(intro);
+            if (sb.length()>190) {sb.append(outro); output.write(sb.toString());sb.setLength(0);}
+            else {
+                sb.append(usersList.pop()).append(" ");
             }
         }
         return FileVisitResult.CONTINUE;
