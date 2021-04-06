@@ -1,4 +1,4 @@
 major.txt
 second.txt
 third.txt
-.txt
+*.txt
