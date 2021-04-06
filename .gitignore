@@ -1,4 +1,3 @@
 *.txt
 src/main/resources/*.txt
-WhaleNamesByHash.class
-WhaleNamesByHash
+/WhaleNamesByHash.class
