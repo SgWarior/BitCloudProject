@@ -2,6 +2,4 @@
 src/main/resources/*.txt
 /WhaleNamesByHash.java
 src/main/resources/whales/whaleNames.txt
-/src/main/java/WhaleNamesByHash.java
-/src/main/java/UpdateProfile.java
-target/classes/WhaleNamesByHash.class
+

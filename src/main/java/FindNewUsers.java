@@ -3,18 +3,14 @@ import java.nio.file.FileVisitResult;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayDeque;
-import java.util.HashSet;
-
 
 public class FindNewUsers extends SimpleFileVisitor {
-    BufferedWriter output;
 
-    private static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
-    private static HashSet<String> testSet = new HashSet<>();
+    private BufferedWriter output;
+    static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
     public FindNewUsers(BufferedWriter output) {
         this.output = output;
     }
-
 
     @Override
     public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
@@ -23,11 +19,8 @@ public class FindNewUsers extends SimpleFileVisitor {
             try(BufferedReader reader = new BufferedReader(new FileReader(current))){
                 while (reader.ready()){
                     String tmp = reader.readLine();
-                    if (tmp.contains("    \"NewUsername\": \"")&& !tmp.contains("    \"NewUsername\": \"\",")) {
-                        String tmp2 = tmp.trim().replace("\"NewUsername\": \"", "@").replace("\",","");
-                        usersList.add(tmp2);
-                        testSet.add(tmp2);
-                    }
+                    if (tmp.equals("  \"TxnType\": \"UPDATE_PROFILE\","))
+                        UpdateProfile.updateUser(reader);
                 }
             }
         }
@@ -49,7 +42,6 @@ public class FindNewUsers extends SimpleFileVisitor {
             else {
                 sb.append(usersList.pop()).append(" ");
             }
-
         }
         return FileVisitResult.CONTINUE;
     }

@@ -27,10 +27,6 @@ import java.util.Date;
             Files.walkFileTree(start, new MaxBuy(maxBuyStream,maxSellStream));
         }
 
-     /*   try (final BufferedWriter maxSellOutStream = new BufferedWriter(new FileWriter(maxSell))) {
-            Files.walkFileTree(start, new FindMaxSell(maxSellOutStream));
-        }
-      */
 
      /*
      File parsik = new File("Parsik"  +  time + ".txt");

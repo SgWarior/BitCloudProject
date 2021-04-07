@@ -34,9 +34,9 @@ public class MaxBuy extends SimpleFileVisitor {
 
                         for (int i = 0; i <11 ; i++) reader.readLine();
                         String typeTransaction =reader.readLine().replace("    \"OperationType\": \"", "").replace("\",", "");
-                        long raw;
+                        long raw=0;
                         if(typeTransaction.equals("buy")){ raw = Long.parseLong(reader.readLine().replace("    \"BitCloutToSellNanos\": ", "").replace(",", ""));}
-                        else {reader.readLine(); raw = Long.parseLong(reader.readLine().replace("    \"CreatorCoinToSellNanos\": ", "").replace(",", ""));}
+                        else if (typeTransaction.equals("sell")) {reader.readLine(); raw = Long.parseLong(reader.readLine().replace("    \"CreatorCoinToSellNanos\": ", "").replace(",", ""));}
                         double tm = raw/1_000_0000;
                         double amount = tm/100;
                         if(amount <= 10) {continue;}else{                        }
@@ -44,10 +44,8 @@ public class MaxBuy extends SimpleFileVisitor {
                         if(typeTransaction.equals("sell")) buyTree.put(amount, answer);
                         else {sellTree.put(amount, answer); WhaleNamesByHash.addWhales(initiator,target);}
                     }
-
                 }
             }
-
         }
 
         return FileVisitResult.CONTINUE;
