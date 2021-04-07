@@ -30,8 +30,8 @@ public class WhaleNamesByHash {
     }
 
     public static String changeHashToName(String Hash){
-        if(Main.usersMap.get(Hash).equals("@"))return Hash;
-        return Main.usersMap.getOrDefault(Hash, Hash);
+        if(Main.usersMap.containsKey(Hash)&& Main.usersMap.get(Hash).equals("@"))return Hash;
+        else return Main.usersMap.getOrDefault(Hash, Hash);
     }
 
 
