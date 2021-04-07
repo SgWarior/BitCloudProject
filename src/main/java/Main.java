@@ -6,46 +6,31 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Date;
+import java.util.HashMap;
 
- public class Main {
+public class Main {
+    static HashMap<String , String > usersMap = new HashMap<>();
     public static void main(String[] args) throws IOException {
         Date date = new Date();
         long time  = date.getTime() % 10000000;
+
         WhaleNamesByHash.initialization();
         Path start = Paths.get("src/main/resources/Bloks");
 
-        File newUsers = new File("newUser" + time + ".txt");
-        File maxBuy = new File("MaxBuy" + time+ ".txt");
-        File maxSell = new File("MaxSell" + time + ".txt");
+        File newUsers          = new File("newUser" + time + ".txt");
+        File maxBuyFile        = new File("MaxBuy" + time+ ".txt");
+        File maxSellFile       = new File("MaxSell" + time + ".txt");
+        File likesAndFollowers = new File("likesAndFollowers"+time+ ".txt");
 
-        try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers))) {
-            Files.walkFileTree(start, new FindNewUsers(usersOutStream));
+        try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers));
+             final BufferedWriter moustFollowedOutStr = new BufferedWriter(new FileWriter(likesAndFollowers))) {
+            Files.walkFileTree(start, new FindNewUsers(usersOutStream, moustFollowedOutStr));
         }
 
-        try (final BufferedWriter maxBuyStream = new BufferedWriter(new FileWriter(maxBuy));
-             final BufferedWriter maxSellStream = new BufferedWriter(new FileWriter(maxSell))) {
+        try (final BufferedWriter maxBuyStream = new BufferedWriter(new FileWriter(maxBuyFile));
+             final BufferedWriter maxSellStream = new BufferedWriter(new FileWriter(maxSellFile))) {
             Files.walkFileTree(start, new MaxBuy(maxBuyStream,maxSellStream));
         }
 
-
-     /*
-     File parsik = new File("Parsik"  +  time + ".txt");
-     try (final BufferedWriter output3 = new BufferedWriter(new FileWriter(parsik))) {
-            Document doc = new Pars().doc;
-            Elements element = doc.body().getAllElements();
-            Document doc2 = Jsoup.parse(new Pars().url, 10000);
-        for (Element elemen : element) {                System.out.println(elemen.toString());            }
-        }
-     */
-     /*
-        File fHash    = new File("Hash"   + time + ".txt");
-        try (final BufferedWriter hashFinder = new BufferedWriter(new FileWriter(fHash))) {
-            Files.walkFileTree(start, new FindHash(hashFinder));
-        }
-
- */
-
-
     }
 }
-// https://api.bitclout.com/api/v1/block с содержимым: {"Height":11427,"FullBlock":true}
