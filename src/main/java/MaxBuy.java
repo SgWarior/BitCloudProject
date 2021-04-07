@@ -25,12 +25,12 @@ public class MaxBuy extends SimpleFileVisitor {
                 while (reader.ready()){
                     String tmp = reader.readLine();
                     if(tmp.contains("  \"TxnType\": \"CREATOR_COIN\",")){
-                        String initiator = reader.readLine().replace("  \"TransactorPublicKeyBase58Check\": \"", "").replace("\",", "");
-                        String whaleName = WhaleNamesByHash.changeHashToName(initiator);
+                        String initiatorHash = reader.readLine().replace("  \"TransactorPublicKeyBase58Check\": \"", "").replace("\",", "");
+                        String whaleName = WhaleNamesByHash.changeHashToName(initiatorHash);
 
                         for (int i = 0; i <6 ; i++) reader.readLine();
-                        String target = reader.readLine().replace("      \"PublicKeyBase58Check\": \"", "").replace("\",", "");
-                        String influencer = WhaleNamesByHash.changeHashToName(target);
+                        String targetHash = reader.readLine().replace("      \"PublicKeyBase58Check\": \"", "").replace("\",", "");
+                        String influencer = WhaleNamesByHash.changeHashToName(targetHash);
 
                         for (int i = 0; i <11 ; i++) reader.readLine();
                         String typeTransaction =reader.readLine().replace("    \"OperationType\": \"", "").replace("\",", "");
@@ -42,7 +42,7 @@ public class MaxBuy extends SimpleFileVisitor {
                         if(amount <= 10) {continue;}else{                        }
                         String answer = whaleName+"  "+ typeTransaction +"  "+ influencer + " for "+amount + " BitClouds";
                         if(typeTransaction.equals("sell")) buyTree.put(amount, answer);
-                        else {sellTree.put(amount, answer); WhaleNamesByHash.addWhales(initiator,target);}
+                        else {sellTree.put(amount, answer); WhaleNamesByHash.addWhales(initiatorHash,targetHash);}
                     }
                 }
             }

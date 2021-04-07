@@ -42,7 +42,6 @@ public class FindNewUsers extends SimpleFileVisitor {
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
 
         for (String st: UpdateProfile.inviteUsersList()) usersOutput.write(st);
-
         followerOutput.write(MostFollowed.getThreePlaces());
         followerOutput.newLine();
         followerOutput.write(MostLike.getThreePlaces());

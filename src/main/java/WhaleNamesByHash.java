@@ -16,8 +16,8 @@ public class WhaleNamesByHash {
     }
 
     public static void addWhales(String whale, String influincer){
-        Main.usersMap.putIfAbsent(whale, "@");
-        Main.usersMap.putIfAbsent(influincer, "@");
+        Main.usersMap.putIfAbsent(whale, whale);
+        Main.usersMap.putIfAbsent(influincer, whale);
     }
 
     public static void writeWhales() throws IOException {
@@ -29,8 +29,9 @@ public class WhaleNamesByHash {
         }
     }
 
-    public static String changeHashToName(String name){
-        return Main.usersMap.getOrDefault(name, name);
+    public static String changeHashToName(String Hash){
+        if(Main.usersMap.get(Hash).equals("@"))return Hash;
+        return Main.usersMap.getOrDefault(Hash, Hash);
     }
 
 

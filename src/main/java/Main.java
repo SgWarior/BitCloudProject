@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 public class Main {
-    static HashMap<String , String > usersMap = new HashMap<>();
+    public static HashMap<String , String > usersMap = new HashMap<>();
     public static void main(String[] args) throws IOException {
         Date date = new Date();
         long time  = date.getTime() / 10000000;
