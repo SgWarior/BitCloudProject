@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 
 public class UpdateProfile {
 
@@ -16,4 +17,24 @@ public class UpdateProfile {
             usersList.add(nameChanged);
         }
     }
+
+
+    public static ArrayList<String> inviteUsersList() {
+        ArrayList usersInvList = new ArrayList();
+           StringBuilder sb = new StringBuilder();
+           String intro = "Welcome New users\n";
+           String outro = "\nFollow @welcomenewusers to get announcement!\nLet's become mutual followers";
+
+           while (!usersList.isEmpty()) {
+               if (sb.length() == 0) sb.append("\n").append(intro);
+               if (sb.length() > 192) {
+                   sb.append(outro);
+                   usersInvList.add(sb.append("\n").toString());
+                   sb.setLength(0);
+               } else {
+                   sb.append(usersList.pop()).append(" ");
+               }
+            }
+           return usersInvList;
+        }
 }

@@ -5,10 +5,10 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 
 public class FindNewUsers extends SimpleFileVisitor {
+    static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
 
     private BufferedWriter usersOutput;
     private BufferedWriter followerOutput;
-    static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
     public FindNewUsers(BufferedWriter usersOutput, BufferedWriter followerOutput) {
         this.usersOutput = usersOutput;
         this.followerOutput= followerOutput;
@@ -40,26 +40,11 @@ public class FindNewUsers extends SimpleFileVisitor {
 
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
-        // newUsersOutputInFile
-        {
-        StringBuilder sb = new StringBuilder();
-        String intro = "Welcome New users\n";
-        String outro= "\nFollow @welcomenewusers to get announcement!\nLet's become mutual followers";
 
-        if (usersList.contains("@demibagby")||usersList.contains("@demibagb")) {
-            sb.append("________________ALERT_______________ @demibagby ____detected!__anouncment @ashtanmoore"); } //remove when is done
+        for (String st: UpdateProfile.inviteUsersList()) usersOutput.write(st);
 
-        while (!usersList.isEmpty()){
-            if(sb.length()==0)sb.append("\n").append(intro);
-            if (sb.length()>192) {sb.append(outro); usersOutput.write(sb.append("\n").toString());sb.setLength(0);}
-            else {
-                sb.append(usersList.pop()).append(" ");
-            }
-        }}
-        System.out.println(MostFollowed.getThreePlaces());
         followerOutput.write(MostFollowed.getThreePlaces());
-
-        System.out.println(MostLike.getThreePlaces());
+        followerOutput.newLine();
         followerOutput.write(MostLike.getThreePlaces());
 
         return FileVisitResult.CONTINUE;
