@@ -23,7 +23,7 @@ public class MostFollowed {
     public static String getThreePlaces() {
         //TopFollowedUsers
         StringBuilder sb= new StringBuilder();
-        String intro = "Most Followed users by 24 ours\n";
+        String intro = "Most Followed users by 24 hours\n";
         String outro = "\nFollow @WhaleRadar and get fresh data!";
 
         String goldHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();

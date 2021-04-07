@@ -23,7 +23,7 @@ public class MostLike {
     public static String getThreePlaces() {
         //TopLikedUsers
         StringBuilder sb= new StringBuilder();
-        String intro = "\nMost Liked users by 24 ours\n";
+        String intro = "\nMost Liked users by 24 hours\n";
         String outro = "\nFollow @WhaleRadar and get fresh data!";
 
         String goldHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
