@@ -3,7 +3,6 @@ import java.nio.file.FileVisitResult;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayDeque;
-import java.util.HashMap;
 import java.util.HashSet;
 
 
@@ -24,7 +23,7 @@ public class FindNewUsers extends SimpleFileVisitor {
             try(BufferedReader reader = new BufferedReader(new FileReader(current))){
                 while (reader.ready()){
                     String tmp = reader.readLine();
-                    if (tmp.contains("NewUsername")&& !tmp.contains("NewUsername\": \"\"")) {
+                    if (tmp.contains("    \"NewUsername\": \"")&& !tmp.contains("    \"NewUsername\": \"\",")) {
                         String tmp2 = tmp.trim().replace("\"NewUsername\": \"", "@").replace("\",","");
                         usersList.add(tmp2);
                         testSet.add(tmp2);
@@ -37,15 +36,20 @@ public class FindNewUsers extends SimpleFileVisitor {
 
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
-        String intro = "Welcome New users\n";
+               String intro = "Welcome New users\n";
         String outro= "\nFollow @welcomenewusers to get announcement!\nLet's become mutual followers";
         StringBuilder sb = new StringBuilder();
+        if (usersList.contains("@demibagby")||usersList.contains("@demibagb")) {
+            sb.append("________________ALERT_______________ @demibagby ____detected!__anouncment @ashtanmoore");
+        } //remove when is done
+
         while (!usersList.isEmpty()){
             if(sb.length()==0)sb.append("\n").append(intro);
             if (sb.length()>192) {sb.append(outro); output.write(sb.append("\n").toString());sb.setLength(0);}
             else {
                 sb.append(usersList.pop()).append(" ");
             }
+
         }
         return FileVisitResult.CONTINUE;
     }
