@@ -22,11 +22,14 @@ public class Main {
         File newUsers          = new File("newUser" + time + ".txt");
         File whalesOutput       = new File("MwhalesOutput" + time + ".txt");
         File likesAndFollowers = new File("likesAndFollowers"+time+ ".txt");
+        File maxVolume          = new File("MaxVolume"+time+ ".txt");
 
         try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers));
              final BufferedWriter moustFollowedOutStr = new BufferedWriter(new FileWriter(likesAndFollowers));
-             final BufferedWriter whalesOutputStr = new BufferedWriter(new FileWriter(whalesOutput))) {
-            Files.walkFileTree(start, new CheckBlockTree(usersOutStream, moustFollowedOutStr, whalesOutputStr));
+             final BufferedWriter whalesOutputStr = new BufferedWriter(new FileWriter(whalesOutput));
+             final BufferedWriter maxVolum = new BufferedWriter(new FileWriter(maxVolume))
+) {
+            Files.walkFileTree(start, new CheckBlockTree(usersOutStream, moustFollowedOutStr, whalesOutputStr, maxVolum));
         }
     }
 }

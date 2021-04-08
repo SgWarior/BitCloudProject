@@ -1,10 +1,7 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Properties;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -82,6 +79,25 @@ public class WhalesDeals
         }
         if (counter<3)whalesOutput.write(pr.getProperty("WhaleAfter"));
 
+
+    }
+
+    public static void writeMaxVolumeDealers(BufferedWriter maxVolume) throws IOException {
+        for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")) ; i++) {
+            maxVolume.write(pr.getProperty("MaxVolumeBuyIntr"));
+            String whaleHash =(Collections.max(topBuyer.entrySet(), Map.Entry.comparingByValue()).getKey());
+            maxVolume.write(WhaleNamesByHash.changeHashToName(whaleHash)+ " made transactions on "+ topBuyer.get(whaleHash));
+            topBuyer.remove(whaleHash);
+            maxVolume.write(pr.getProperty("MaxVolumeBuyOutr"));
+        }
+
+        for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")) ; i++) {
+            maxVolume.write(pr.getProperty("MaxVolSellIntr"));
+            String skam =(Collections.max(sellOut.entrySet(), Map.Entry.comparingByValue()).getKey());
+            maxVolume.write(WhaleNamesByHash.changeHashToName(skam)+ " was sold to "+ sellOut.get(skam));
+            sellOut.remove(skam);
+            maxVolume.write(pr.getProperty("MaxVolSellOutr"));
+        }
 
     }
 
