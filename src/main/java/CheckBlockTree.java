@@ -9,9 +9,12 @@ public class CheckBlockTree extends SimpleFileVisitor {
 
     private BufferedWriter usersOutput;
     private BufferedWriter followerOutput;
-    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput) {
+    private BufferedWriter whalesOutput;
+
+    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput,BufferedWriter whalesOutput) {
         this.usersOutput = usersOutput;
         this.followerOutput= followerOutput;
+        this.whalesOutput = whalesOutput;
     }
 
     @Override
@@ -24,10 +27,10 @@ public class CheckBlockTree extends SimpleFileVisitor {
                     switch (tnxType){
                         case "BASIC_TRANSFER":               break;
                         case "UPDATE_PROFILE": UpdateProfile.updateUser(reader);break;
-                        case "FOLLOW":         MostFollowed.addInflu(reader);   break;
-                        case "CREATOR_COIN":                                   ;break;
+                        case "FOLLOW":            MostFollowed.addInflu(reader);break;
+                        case "CREATOR_COIN":        WhalesDeals.addDeal(reader);break;
                         case "SUBMIT_POST":                                    ;break;
-                        case "LIKE":               MostLike.addInflu(reader);  break;
+                        case "LIKE":                  MostLike.addInflu(reader);break;
                         case "BLOCK_REWARD":   ;                                break;
                         case "BITCOIN_EXCHANGE":    ;                           break;
                         case  "PRIVATE_MESSAGE":     ;                          break;
@@ -45,6 +48,8 @@ public class CheckBlockTree extends SimpleFileVisitor {
         followerOutput.write(MostFollowed.getThreePlaces());
         followerOutput.newLine();
         followerOutput.write(MostLike.getThreePlaces());
+
+        WhalesDeals.writeResultInfile(whalesOutput);
 
         return FileVisitResult.CONTINUE;
     }
