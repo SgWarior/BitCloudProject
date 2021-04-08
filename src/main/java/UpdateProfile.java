@@ -2,10 +2,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Properties;
 
 public class UpdateProfile {
 
-    private static ArrayDeque<String> usersList = FindNewUsers.usersList;
+    private static Properties pr= Main.pr;
+
+    private static ArrayDeque<String> usersList = CheckBlockTree.usersList;
 
     public static void updateUser(BufferedReader reader) throws IOException {
         String userHash = reader.readLine().replace("  \"TransactorPublicKeyBase58Check\": \"", "").replace("\",","");
@@ -22,8 +25,8 @@ public class UpdateProfile {
     public static ArrayList<String> inviteUsersList() {
         ArrayList usersInvList = new ArrayList();
            StringBuilder sb = new StringBuilder();
-           String intro = "Welcome New users\n";
-           String outro = "\nFollow @welcomenewusers to get announcement!\nLet's become mutual followers";
+           String intro = pr.getProperty("UsersBefore");
+           String outro = pr.getProperty("UsersAfter");
 
            while (!usersList.isEmpty()) {
                if (sb.length() == 0) sb.append("\n").append(intro);

@@ -1,16 +1,18 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Properties;
 
 public class Main {
     public static HashMap<String , String > usersMap = new HashMap<>();
+    public static Properties pr = new Properties();
+
     public static void main(String[] args) throws IOException {
+
+        pr.load(new FileInputStream(new File("src/main/resources/text.properties")));
         Date date = new Date();
         long time  = date.getTime() / 10000000;
 
@@ -24,7 +26,7 @@ public class Main {
 
         try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers));
              final BufferedWriter moustFollowedOutStr = new BufferedWriter(new FileWriter(likesAndFollowers))) {
-            Files.walkFileTree(start, new FindNewUsers(usersOutStream, moustFollowedOutStr));
+            Files.walkFileTree(start, new CheckBlockTree(usersOutStream, moustFollowedOutStr));
         }
 
         try (final BufferedWriter maxBuyStream = new BufferedWriter(new FileWriter(maxBuyFile));

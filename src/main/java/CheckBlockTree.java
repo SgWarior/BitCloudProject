@@ -4,12 +4,12 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 
-public class FindNewUsers extends SimpleFileVisitor {
+public class CheckBlockTree extends SimpleFileVisitor {
     static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
 
     private BufferedWriter usersOutput;
     private BufferedWriter followerOutput;
-    public FindNewUsers(BufferedWriter usersOutput, BufferedWriter followerOutput) {
+    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput) {
         this.usersOutput = usersOutput;
         this.followerOutput= followerOutput;
     }

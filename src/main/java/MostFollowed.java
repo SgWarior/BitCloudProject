@@ -3,10 +3,12 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class MostFollowed {
 
     static private HashMap<String, Integer> followedTree = new HashMap<>();
+    private static Properties pr= Main.pr;
 
     public static void addInflu(BufferedReader reader) throws IOException {
         for (int i = 0; i <7 ; i++)         reader.readLine();
@@ -23,8 +25,6 @@ public class MostFollowed {
     public static String getThreePlaces() {
         //TopFollowedUsers
         StringBuilder sb= new StringBuilder();
-        String intro = "Most Followed users by 24 hours\n";
-        String outro = "\nFollow @WhaleRadar and get fresh data!";
 
         String goldHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
         String goldName = WhaleNamesByHash.changeHashToName(goldHash);
@@ -40,10 +40,10 @@ public class MostFollowed {
         String bronzeName = WhaleNamesByHash.changeHashToName(bronzeHash);
         int bronzeTotalNewFollowers =  followedTree.get(bronzeHash);
 
-        sb.append(intro).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" followers!\n")
+        sb.append(pr.getProperty("MaxFollBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" followers!\n")
         .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" followers!\n")
         .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" followers")
-        .append(outro);
+        .append(pr.getProperty("MaxFolAfter"));
 
         return sb.toString();
 

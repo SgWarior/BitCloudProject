@@ -3,9 +3,11 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class MostLike {
 
+    private static Properties pr= Main.pr;
     static public HashMap<String, Integer> likeTree= new HashMap<>();
 
     public static void addInflu(BufferedReader reader) throws IOException {
@@ -23,8 +25,6 @@ public class MostLike {
     public static String getThreePlaces() {
         //TopLikedUsers
         StringBuilder sb= new StringBuilder();
-        String intro = "\nMost Liked users by 24 hours\n";
-        String outro = "\nFollow @WhaleRadar and get fresh data!";
 
         String goldHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
         String goldName = WhaleNamesByHash.changeHashToName(goldHash);
@@ -40,10 +40,10 @@ public class MostLike {
         String bronzeName = WhaleNamesByHash.changeHashToName(bronzeHash);
         int bronzeTotalNewFollowers =  likeTree.get(bronzeHash);
 
-        sb.append(intro).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" likes!\n")
+        sb.append(pr.getProperty("MaxLikeBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" likes!\n")
                 .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" likes!\n")
                 .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" likes")
-                .append(outro);
+                .append(pr.getProperty("MaxLikeAfter"));
 
         return sb.toString();
 
