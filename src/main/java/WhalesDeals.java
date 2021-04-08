@@ -16,24 +16,28 @@ public class WhalesDeals
     static public void mostVolumeDealer(){
         for (Deal deal : listOfBuys) {
             topBuyer.merge(deal.buyer, deal.amount, Double::sum);
-            sellOut.merge(deal.buyer, deal.amount, Double::sum);
+        }
+        for(Deal deal : listOfSells){
+            sellOut.merge(deal.sellout, deal.amount, Double::sum);
         }
     }
 
     public static ArrayList<Deal> getListOfBuys(int quantity) {
          listOfBuys.sort((o1, o2) -> (int) (o2.amount-o1.amount));
-        listOfBuys = (ArrayList<Deal>) listOfBuys.stream()
+         ArrayList<Deal> tmpList;
+        tmpList = (ArrayList<Deal>) listOfBuys.stream()
                 .limit(quantity)
                 .collect(Collectors.toList());
-         return listOfBuys;
+         return tmpList;
     }
 
     public static ArrayList<Deal> getListOfSells(int quantity) {
         listOfSells.sort((o1, o2) -> (int) (o2.amount - o1.amount));
-        listOfSells = (ArrayList<Deal>) listOfSells.stream()
+        ArrayList<Deal> tmpList;
+        tmpList = (ArrayList<Deal>) listOfSells.stream()
                 .limit(quantity)
                 .collect(Collectors.toList());
-        return listOfSells;
+        return tmpList;
     }
 
     public static void addDeal(BufferedReader reader) throws IOException {
@@ -58,7 +62,7 @@ public class WhalesDeals
        else if (operation.equals("sell")){reader.readLine();
                 amount = Long.parseLong(reader.readLine()
                .replace("    \"CreatorCoinToSellNanos\": ","").replace(",",""));}
-        listOfSells.add(new Deal(false, initiator, target, amount));
+        listOfSells.add(new Deal(false, target,initiator, amount));
     }
 
     public static void writeResultInfile(BufferedWriter whalesOutput) throws IOException {
@@ -83,7 +87,7 @@ public class WhalesDeals
     }
 
     public static void writeMaxVolumeDealers(BufferedWriter maxVolume) throws IOException {
-        for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")) ; i++) {
+        for (int i = 0; i <topBuyer.size(); i++) {
             maxVolume.write(pr.getProperty("MaxVolumeBuyIntr"));
             String whaleHash =(Collections.max(topBuyer.entrySet(), Map.Entry.comparingByValue()).getKey());
             maxVolume.write(WhaleNamesByHash.changeHashToName(whaleHash)+ " made transactions on "+ topBuyer.get(whaleHash));
@@ -91,7 +95,7 @@ public class WhalesDeals
             maxVolume.write(pr.getProperty("MaxVolumeBuyOutr"));
         }
 
-        for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")) ; i++) {
+        for (int i = 0; i <sellOut.size(); i++) {
             maxVolume.write(pr.getProperty("MaxVolSellIntr"));
             String skam =(Collections.max(sellOut.entrySet(), Map.Entry.comparingByValue()).getKey());
             maxVolume.write(WhaleNamesByHash.changeHashToName(skam)+ " was sold to "+ sellOut.get(skam));
