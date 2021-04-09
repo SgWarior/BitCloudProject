@@ -9,19 +9,21 @@ public class WhalesDeals
     private static Properties pr= Main.pr;
     static private HashMap<String, Double> topBuyer = new HashMap<>();
     static private HashMap<String, Double> sellOut = new HashMap<>();
-    static private ArrayList<Deal> listOfBuys= new ArrayList<Deal>();
-    static private ArrayList<Deal> listOfSells= new ArrayList<Deal>();
+    static private ArrayList<Deal> listOfBuys= new ArrayList<>();
+    static private ArrayList<Deal> listOfSells= new ArrayList<>();
 
     static public void mostVolumeDealer(){
         for(Deal deal : listOfSells){
-            sellOut.merge(deal.sellout, deal.getAmountDouble(), Double::sum);
+            sellOut.merge(deal.getTarget(), deal.getAmountDouble(), Double::sum);
         }
 
         for (Deal deal : listOfBuys) {
-            topBuyer.merge(deal.buyer, deal.getAmountDouble(), Double::sum);
-            if(listOfSells.contains(deal.sellout))
-                sellOut.merge(deal.sellout, 0-deal.getAmountDouble(), Double::sum);
+            topBuyer.merge(deal.getInitiator(), deal.getAmountDouble(), Double::sum);
+
+           if(sellOut.containsKey(deal.getTarget())){
+              sellOut.merge(deal.getTarget(), -deal.getAmountDouble(), Double::sum);}
         }
+        System.out.println(listOfSells.size()  + "  " + listOfBuys.size());
     }
 
     public static ArrayList<Deal> getListOfBuys(int quantity) {
@@ -55,7 +57,7 @@ public class WhalesDeals
        String operation= reader.readLine().replace("    \"OperationType\": \"","")
                .replace(pr.getProperty("noHashL"),"");
 
-       long amount=0;
+       long amount;
        boolean IsBuy= operation.equals("buy");
        if (IsBuy){ amount = Long.parseLong(reader.readLine()
                .replace("    \"BitCloutToSellNanos\": ","").replace(",",""));
@@ -63,8 +65,8 @@ public class WhalesDeals
        }
        else if (operation.equals("sell")){reader.readLine();
                 amount = Long.parseLong(reader.readLine()
-               .replace("    \"CreatorCoinToSellNanos\": ","").replace(",",""));}
-        listOfSells.add(new Deal(false, initiator, target,amount));
+               .replace("    \"CreatorCoinToSellNanos\": ","").replace(",",""));
+        listOfSells.add(new Deal(false, initiator, target,amount));}
     }
 
     public static void writeResultInfile(BufferedWriter whalesOutput) throws IOException {
@@ -109,43 +111,41 @@ public class WhalesDeals
 
     protected static class Deal {
         private boolean IsBuy;
-        private String  buyer;
-        private String  sellout;
+        private String initiator;
+        private String target;
         private long  amount;
 
         public boolean isBuy() {
             return IsBuy;
         }
 
-        public String getBuyer() {
-            return buyer;
+        public String getInitiator() {
+            return initiator;
         }
 
-        public String getSellout() {
-            return sellout;
+        public String getTarget() {
+            return target;
         }
 
         public int getAmountInt(){   //return int for compare format xxxx.xxx 3sign after dot.
             long fIter = amount/1_000_000;
-            int amountInt =(int)fIter;
-            return amountInt;
+            return (int)fIter;
         }
 
         public double getAmountDouble() {
-            double dAmount= (double) getAmountInt()/1000;
-            return dAmount;
+            return (double) getAmountInt()/1000;
         }
 
-        public Deal(boolean isBuy, String buyer, String sellout, long amount) {
+        public Deal(boolean isBuy, String initiator, String target, long amount) {
             this.IsBuy = isBuy;
-            this.buyer = buyer;
-            this.sellout = sellout;
+            this.initiator = initiator;
+            this.target = target;
             this.amount = amount;
         }
 
         public String getMessageAboutDeal(){
-            return WhaleNamesByHash.changeHashToName(getBuyer())+ " buy " +
-                    WhaleNamesByHash.changeHashToName(getSellout())+ " for " + getAmountDouble() + " BitClouds";
+            return WhaleNamesByHash.changeHashToName(getInitiator())+ " buy " +
+                    WhaleNamesByHash.changeHashToName(getTarget())+ " for " + getAmountDouble() + " BitClouds";
         }
     }
 }

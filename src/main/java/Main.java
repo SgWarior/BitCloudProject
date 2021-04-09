@@ -14,7 +14,7 @@ public class Main {
 
         pr.load(new FileInputStream(new File("src/main/resources/text.properties")));
         Date date = new Date();
-        long time  = date.getTime() / 10000000;
+        long time  = date.getTime() / 1000000;
 
         WhaleNamesByHash.initialization();
         Path start = Paths.get("src/main/resources/Bloks");
