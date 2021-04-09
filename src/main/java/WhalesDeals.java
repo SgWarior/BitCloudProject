@@ -3,7 +3,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class WhalesDeals
 {
@@ -14,16 +13,19 @@ public class WhalesDeals
     static private ArrayList<Deal> listOfSells= new ArrayList<Deal>();
 
     static public void mostVolumeDealer(){
-        for (Deal deal : listOfBuys) {
-            topBuyer.merge(deal.buyer, deal.amount, Double::sum);
-        }
         for(Deal deal : listOfSells){
-            sellOut.merge(deal.sellout, deal.amount, Double::sum);
+            sellOut.merge(deal.sellout, deal.getAmountDouble(), Double::sum);
+        }
+
+        for (Deal deal : listOfBuys) {
+            topBuyer.merge(deal.buyer, deal.getAmountDouble(), Double::sum);
+            if(listOfSells.contains(deal.sellout))
+                sellOut.merge(deal.sellout, 0-deal.getAmountDouble(), Double::sum);
         }
     }
 
     public static ArrayList<Deal> getListOfBuys(int quantity) {
-         listOfBuys.sort((o1, o2) -> (int) (o2.amount-o1.amount));
+         listOfBuys.sort((o1, o2) -> (o2.getAmountInt()-o1.getAmountInt()));
          ArrayList<Deal> tmpList;
         tmpList = (ArrayList<Deal>) listOfBuys.stream()
                 .limit(quantity)
@@ -32,7 +34,7 @@ public class WhalesDeals
     }
 
     public static ArrayList<Deal> getListOfSells(int quantity) {
-        listOfSells.sort((o1, o2) -> (int) (o2.amount - o1.amount));
+        listOfSells.sort((o1, o2) -> (o2.getAmountInt() - o1.getAmountInt()));
         ArrayList<Deal> tmpList;
         tmpList = (ArrayList<Deal>) listOfSells.stream()
                 .limit(quantity)
@@ -87,7 +89,7 @@ public class WhalesDeals
     }
 
     public static void writeMaxVolumeDealers(BufferedWriter maxVolume) throws IOException {
-        for (int i = 0; i <5; i++) {
+        for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")); i++) {
             maxVolume.write(pr.getProperty("MaxVolumeBuyIntr"));
             String whaleHash =(Collections.max(topBuyer.entrySet(), Map.Entry.comparingByValue()).getKey());
             maxVolume.write(WhaleNamesByHash.changeHashToName(whaleHash)+ " made transactions on "+ topBuyer.get(whaleHash));
@@ -95,7 +97,7 @@ public class WhalesDeals
             maxVolume.write(pr.getProperty("MaxVolumeBuyOutr"));
         }
 
-        for (int i = 0; i <5; i++) {
+        for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")); i++) {
             maxVolume.write(pr.getProperty("MaxVolSellIntr"));
             String skam =(Collections.max(sellOut.entrySet(), Map.Entry.comparingByValue()).getKey());
             maxVolume.write(WhaleNamesByHash.changeHashToName(skam)+ " was sold to "+ sellOut.get(skam));
@@ -109,7 +111,7 @@ public class WhalesDeals
         private boolean IsBuy;
         private String  buyer;
         private String  sellout;
-        private double  amount;
+        private long  amount;
 
         public boolean isBuy() {
             return IsBuy;
@@ -123,22 +125,27 @@ public class WhalesDeals
             return sellout;
         }
 
-        public double getAmount() {
-            return amount;
+        public int getAmountInt(){   //return int for compare format xxxx.xxx 3sign after dot.
+            long fIter = amount/1_000_000;
+            int amountInt =(int)fIter;
+            return amountInt;
+        }
+
+        public double getAmountDouble() {
+            double dAmount= (double) getAmountInt()/1000;
+            return dAmount;
         }
 
         public Deal(boolean isBuy, String buyer, String sellout, long amount) {
             this.IsBuy = isBuy;
             this.buyer = buyer;
             this.sellout = sellout;
-            long tmp = amount;
-            this.amount = amount/10000000;
+            this.amount = amount;
         }
 
         public String getMessageAboutDeal(){
-            double dAmount = this.amount/100;
             return WhaleNamesByHash.changeHashToName(getBuyer())+ " buy " +
-                    WhaleNamesByHash.changeHashToName(getSellout())+ " for " + dAmount + " BitClouds";
+                    WhaleNamesByHash.changeHashToName(getSellout())+ " for " + getAmountDouble() + " BitClouds";
         }
     }
 }
