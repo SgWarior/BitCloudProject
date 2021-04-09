@@ -62,7 +62,7 @@ public class WhalesDeals
        else if (operation.equals("sell")){reader.readLine();
                 amount = Long.parseLong(reader.readLine()
                .replace("    \"CreatorCoinToSellNanos\": ","").replace(",",""));}
-        listOfSells.add(new Deal(false, target,initiator, amount));
+        listOfSells.add(new Deal(false, initiator, target,amount));
     }
 
     public static void writeResultInfile(BufferedWriter whalesOutput) throws IOException {
@@ -87,7 +87,7 @@ public class WhalesDeals
     }
 
     public static void writeMaxVolumeDealers(BufferedWriter maxVolume) throws IOException {
-        for (int i = 0; i <topBuyer.size(); i++) {
+        for (int i = 0; i <5; i++) {
             maxVolume.write(pr.getProperty("MaxVolumeBuyIntr"));
             String whaleHash =(Collections.max(topBuyer.entrySet(), Map.Entry.comparingByValue()).getKey());
             maxVolume.write(WhaleNamesByHash.changeHashToName(whaleHash)+ " made transactions on "+ topBuyer.get(whaleHash));
@@ -95,7 +95,7 @@ public class WhalesDeals
             maxVolume.write(pr.getProperty("MaxVolumeBuyOutr"));
         }
 
-        for (int i = 0; i <sellOut.size(); i++) {
+        for (int i = 0; i <5; i++) {
             maxVolume.write(pr.getProperty("MaxVolSellIntr"));
             String skam =(Collections.max(sellOut.entrySet(), Map.Entry.comparingByValue()).getKey());
             maxVolume.write(WhaleNamesByHash.changeHashToName(skam)+ " was sold to "+ sellOut.get(skam));
