@@ -2,9 +2,10 @@ import java.io.*;
 import java.nio.file.FileVisitResult;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.*;
+import java.util.ArrayDeque;
 
 public class CheckBlockTree extends SimpleFileVisitor {
+
     static ArrayDeque<String> usersList = new ArrayDeque<>(1000);
 
     private BufferedWriter usersOutput;
@@ -27,7 +28,7 @@ public class CheckBlockTree extends SimpleFileVisitor {
                 while (reader.ready()){
                     String tnxType = reader.readLine().replace("  \"TxnType\": \"","").replace("\",","");
                     switch (tnxType){
-                        case "BASIC_TRANSFER":               break;
+                        case "BASIC_TRANSFER": TrueNewUser.chek(reader);         break;
                         case "UPDATE_PROFILE": UpdateProfile.updateUser(reader);break;
                         case "FOLLOW":            MostFollowed.addInflu(reader);break;
                         case "CREATOR_COIN":        WhalesDeals.addDeal(reader);break;
@@ -46,7 +47,10 @@ public class CheckBlockTree extends SimpleFileVisitor {
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
 
-        for (String st: UpdateProfile.inviteUsersList()) usersOutput.write(st);
+        for (String st: UpdateProfile.inviteUsersList(usersList)) usersOutput.write(st);
+
+
+
         followerOutput.write(MostFollowed.getThreePlaces());
         followerOutput.newLine();
         followerOutput.write(MostLike.getThreePlaces());

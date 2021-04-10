@@ -7,8 +7,8 @@ import java.util.Properties;
 public class UpdateProfile {
 
     private static Properties pr= Main.pr;
+    static ArrayDeque<String> usersList = CheckBlockTree.usersList;
 
-    private static ArrayDeque<String> usersList = CheckBlockTree.usersList;
 
     public static void updateUser(BufferedReader reader) throws IOException {
         String userHash = reader.readLine().replace("  \"TransactorPublicKeyBase58Check\": \"", "").replace("\",","");
@@ -21,8 +21,7 @@ public class UpdateProfile {
         }
     }
 
-
-    public static ArrayList<String> inviteUsersList() {
+    public static ArrayList<String> inviteUsersList(ArrayDeque usersList) {
         ArrayList usersInvList = new ArrayList();
            StringBuilder sb = new StringBuilder();
            String intro = pr.getProperty("UsersBefore");
@@ -40,4 +39,10 @@ public class UpdateProfile {
             }
            return usersInvList;
         }
+
+    public static void addTrueUsers(ArrayDeque usersList){
+        for (String newUser : TrueNewUser.getHashOfNewUsers()) {
+            if(Main.usersMap.containsKey(newUser)) usersList.add(newUser);
+        }
+    }
 }
