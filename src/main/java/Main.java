@@ -11,7 +11,7 @@ public class Main {
     public static Properties pr = new Properties();
 
     public static void main(String[] args) throws IOException {
-        System.out.println();
+
         pr.load(new FileInputStream(new File("src/main/resources/text.properties")));
         Date date = new Date();
         long time  = date.getTime() / 1000000;
