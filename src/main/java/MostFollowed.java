@@ -21,23 +21,22 @@ public class MostFollowed {
       else followedTree.put(influincer, followedTree.get(influincer)==null? 1 : followedTree.get(influincer)+1);
     }
 
-
     public static String getThreePlaces() {
         //TopFollowedUsers
         StringBuilder sb= new StringBuilder();
 
         String goldHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String goldName = WhaleNamesByHash.changeHashToName(goldHash);
+        String goldName = userNames.changeHashToName(goldHash);
         int goldTotalNewFollowers = followedTree.get(goldHash);
         followedTree.remove(goldHash);
 
         String silverHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String silverName = WhaleNamesByHash.changeHashToName(silverHash);
+        String silverName = userNames.changeHashToName(silverHash);
         int silverTotalNewFollowers = followedTree.get(silverHash);
         followedTree.remove(silverHash);
 
         String bronzeHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String bronzeName = WhaleNamesByHash.changeHashToName(bronzeHash);
+        String bronzeName = userNames.changeHashToName(bronzeHash);
         int bronzeTotalNewFollowers =  followedTree.get(bronzeHash);
 
         sb.append(pr.getProperty("MaxFollBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" followers!\n")

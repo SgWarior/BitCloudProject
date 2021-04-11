@@ -23,7 +23,6 @@ public class WhalesDeals
            if(sellOut.containsKey(deal.getTarget())){
               sellOut.merge(deal.getTarget(), -deal.getAmountDouble(), Double::sum);}
         }
-        System.out.println(listOfSells.size()  + "  " + listOfBuys.size());
     }
 
     public static ArrayList<Deal> getListOfBuys(int quantity) {
@@ -94,7 +93,7 @@ public class WhalesDeals
         for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")); i++) {
             maxVolume.write(pr.getProperty("MaxVolumeBuyIntr"));
             String whaleHash =(Collections.max(topBuyer.entrySet(), Map.Entry.comparingByValue()).getKey());
-            maxVolume.write(WhaleNamesByHash.changeHashToName(whaleHash)+ " made transactions on "+ topBuyer.get(whaleHash));
+            maxVolume.write(userNames.changeHashToName(whaleHash)+ " made transactions on "+ topBuyer.get(whaleHash));
             topBuyer.remove(whaleHash);
             maxVolume.write(pr.getProperty("MaxVolumeBuyOutr"));
         }
@@ -102,7 +101,7 @@ public class WhalesDeals
         for (int i = 0; i <Integer.parseInt(pr.getProperty("MaxVolumeBuyerCount")); i++) {
             maxVolume.write(pr.getProperty("MaxVolSellIntr"));
             String skam =(Collections.max(sellOut.entrySet(), Map.Entry.comparingByValue()).getKey());
-            maxVolume.write(WhaleNamesByHash.changeHashToName(skam)+ " was sold to "+ sellOut.get(skam));
+            maxVolume.write(userNames.changeHashToName(skam)+ " was sold to "+ sellOut.get(skam));
             sellOut.remove(skam);
             maxVolume.write(pr.getProperty("MaxVolSellOutr"));
         }
@@ -144,8 +143,8 @@ public class WhalesDeals
         }
 
         public String getMessageAboutDeal(){
-            return WhaleNamesByHash.changeHashToName(getInitiator())+ " buy " +
-                    WhaleNamesByHash.changeHashToName(getTarget())+ " for " + getAmountDouble() + " BitClouds";
+            return userNames.changeHashToName(getInitiator())+ " buy " +
+                    userNames.changeHashToName(getTarget())+ " for " + getAmountDouble() + " BitClouds";
         }
     }
 }

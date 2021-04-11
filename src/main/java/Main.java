@@ -11,12 +11,13 @@ public class Main {
     public static Properties pr = new Properties();
 
     public static void main(String[] args) throws IOException {
-
+        System.out.println();
         pr.load(new FileInputStream(new File("src/main/resources/text.properties")));
         Date date = new Date();
         long time  = date.getTime() / 1000000;
 
-        WhaleNamesByHash.initialization();
+        userNames.initialization();
+        TrueNewUser.initialization();
         Path start = Paths.get("src/main/resources/Bloks");
 
         File newUsers          = new File("newUser" + time + ".txt");
@@ -31,5 +32,7 @@ public class Main {
 ) {
             Files.walkFileTree(start, new CheckBlockTree(usersOutStream, moustFollowedOutStr, whalesOutputStr, maxVolum));
         }
+        TrueNewUser.destroy();
+        userNames.destroy();
     }
 } //     BC1YLhSkfH28QrMAVkbejMUZELwkAEMwr2FFwhEtofHvzHRtP6rd7s6

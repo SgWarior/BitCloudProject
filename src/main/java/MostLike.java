@@ -27,17 +27,17 @@ public class MostLike {
         StringBuilder sb= new StringBuilder();
 
         String goldHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String goldName = WhaleNamesByHash.changeHashToName(goldHash);
+        String goldName = userNames.changeHashToName(goldHash);
         int goldTotalNewFollowers = likeTree.get(goldHash);
         likeTree.remove(goldHash);
 
         String silverHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String silverName = WhaleNamesByHash.changeHashToName(silverHash);
+        String silverName = userNames.changeHashToName(silverHash);
         int silverTotalNewFollowers = likeTree.get(silverHash);
         likeTree.remove(silverHash);
 
         String bronzeHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String bronzeName = WhaleNamesByHash.changeHashToName(bronzeHash);
+        String bronzeName = userNames.changeHashToName(bronzeHash);
         int bronzeTotalNewFollowers =  likeTree.get(bronzeHash);
 
         sb.append(pr.getProperty("MaxLikeBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" likes!\n")
