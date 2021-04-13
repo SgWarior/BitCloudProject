@@ -48,13 +48,12 @@ public class CheckBlockTree extends SimpleFileVisitor {
             usersOutput.write(s);
         }
 
-       followerOutput.write(MostFollowed.getThreePlaces());
-       followerOutput.newLine();
-       followerOutput.write(MostLike.getThreePlaces());
-       WhalesDeals.writeResultInfile(whalesOutput);
-
-       WhalesDeals.mostVolumeDealer();
-       WhalesDeals.writeMaxVolumeDealers(maxVolume);
+          followerOutput.write(MostFollowed.getThreePlaces());
+          followerOutput.newLine();
+          followerOutput.write(MostLike.getThreePlaces());
+          WhalesDeals.writeResultInfile(whalesOutput);
+          WhalesDeals.mostVolumeDealer();
+          WhalesDeals.writeMaxVolumeDealers(maxVolume);
 
         return FileVisitResult.CONTINUE;
     }

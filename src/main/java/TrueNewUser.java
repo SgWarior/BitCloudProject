@@ -35,7 +35,7 @@ public class TrueNewUser {
                 hashForRemove.add(userHash);
             }
         }
-        System.out.println(Main.usersMap.size());
+
         hashOfNewUsers.removeAll(hashForRemove);
         return listOfNameNewUsers;
     }

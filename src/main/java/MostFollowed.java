@@ -25,6 +25,7 @@ public class MostFollowed {
         //TopFollowedUsers
         StringBuilder sb= new StringBuilder();
 
+        if(followedTree.size()>4) {
         String goldHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
         String goldName = userNames.changeHashToName(goldHash);
         int goldTotalNewFollowers = followedTree.get(goldHash);
@@ -43,6 +44,7 @@ public class MostFollowed {
         .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" followers!\n")
         .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" followers")
         .append(pr.getProperty("MaxFolAfter"));
+        }
 
         return sb.toString();
 

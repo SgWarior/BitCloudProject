@@ -26,25 +26,27 @@ public class MostLike {
         //TopLikedUsers
         StringBuilder sb= new StringBuilder();
 
-        String goldHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String goldName = userNames.changeHashToName(goldHash);
-        int goldTotalNewFollowers = likeTree.get(goldHash);
-        likeTree.remove(goldHash);
+        if(likeTree.size()>4) {
+            String goldHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String goldName = userNames.changeHashToName(goldHash);
+            int goldTotalNewFollowers = likeTree.get(goldHash);
+            likeTree.remove(goldHash);
 
-        String silverHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String silverName = userNames.changeHashToName(silverHash);
-        int silverTotalNewFollowers = likeTree.get(silverHash);
-        likeTree.remove(silverHash);
+            String silverHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String silverName = userNames.changeHashToName(silverHash);
+            int silverTotalNewFollowers = likeTree.get(silverHash);
+            likeTree.remove(silverHash);
 
-        String bronzeHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String bronzeName = userNames.changeHashToName(bronzeHash);
-        int bronzeTotalNewFollowers =  likeTree.get(bronzeHash);
+            String bronzeHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String bronzeName = userNames.changeHashToName(bronzeHash);
+            int bronzeTotalNewFollowers = likeTree.get(bronzeHash);
 
-        sb.append(pr.getProperty("MaxLikeBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" likes!\n")
-                .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" likes!\n")
-                .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" likes")
-                .append(pr.getProperty("MaxLikeAfter"));
+            sb.append(pr.getProperty("MaxLikeBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" likes!\n")
+                    .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" likes!\n")
+                    .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" likes")
+                    .append(pr.getProperty("MaxLikeAfter"));
 
+        }
         return sb.toString();
 
     }
