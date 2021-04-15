@@ -10,6 +10,12 @@ public class MostFollowed {
     static private HashMap<String, Integer> followedTree = new HashMap<>();
     private static Properties pr= Main.pr;
 
+    public static int getFollowerInBlock() {
+        return followerInBlock;
+    }
+
+    private static int followerInBlock = 0;
+
     public static void addInflu(BufferedReader reader) throws IOException {
         for (int i = 0; i <7 ; i++)         reader.readLine();
       String influincer=
@@ -17,8 +23,8 @@ public class MostFollowed {
         for (int i = 0; i < 15; i++) reader.readLine();
         boolean IsUnfollow = reader.readLine().equals("    \"IsUnfollow\": true\n");
         if (IsUnfollow)
-            followedTree.put(influincer, followedTree.get(influincer)==null? -1 : followedTree.get(influincer)-1);
-      else followedTree.put(influincer, followedTree.get(influincer)==null? 1 : followedTree.get(influincer)+1);
+        { followedTree.put(influincer, followedTree.get(influincer)==null? -1 : followedTree.get(influincer)-1); followerInBlock--;}
+      else {followedTree.put(influincer, followedTree.get(influincer)==null? 1 : followedTree.get(influincer)+1);followerInBlock++;}
     }
 
     public static String getThreePlaces() {

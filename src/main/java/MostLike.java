@@ -10,6 +10,12 @@ public class MostLike {
     private static Properties pr= Main.pr;
     static public HashMap<String, Integer> likeTree= new HashMap<>();
 
+    public static int getLikeInBlock() {
+        return likeInBlock;
+    }
+
+    private static int likeInBlock = 0;
+
     public static void addInflu(BufferedReader reader) throws IOException {
         for (int i = 0; i <7 ; i++)         reader.readLine();
         String influincer=
@@ -17,8 +23,10 @@ public class MostLike {
         for (int i = 0; i < 15; i++) reader.readLine();
         boolean IsUnlike = reader.readLine().equals("    \"IsUnlike\": false,");
         if (IsUnlike)
-            likeTree.put(influincer, likeTree.get(influincer)==null? -1 : likeTree.get(influincer)-1);
-        else likeTree.put(influincer, likeTree.get(influincer)==null? 1 : likeTree.get(influincer)+1);
+        {likeTree.put(influincer, likeTree.get(influincer)==null? -1 : likeTree.get(influincer)-1);
+            likeInBlock--;}
+        else{ likeTree.put(influincer, likeTree.get(influincer)==null? 1 : likeTree.get(influincer)+1);
+            likeInBlock++; }
 
     }
 

@@ -10,6 +10,7 @@ public class CheckBlockTree extends SimpleFileVisitor {
     private BufferedWriter whalesOutput;
     private BufferedWriter maxVolume;
 
+
     public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput, BufferedWriter whalesOutput, BufferedWriter maxVolum) {
         this.usersOutput = usersOutput;
         this.followerOutput= followerOutput;
@@ -44,6 +45,13 @@ public class CheckBlockTree extends SimpleFileVisitor {
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
         usersOutput.write("In this block detected "+ TrueNewUser.getNewUsersCounter() +" new creators.\n\n");
+        usersOutput.write("There are totally "+ MostFollowed.getFollowerInBlock() +" new followings in the last 24 hours.\n\n");
+        usersOutput.write("There are totally "+ MostLike.getLikeInBlock() +" likes in the last 24 hours.\n\n");
+
+
+
+
+
         for (String s : UpdateProfile.inviteUsersList(TrueNewUser.getNameOfNewUsers())) {
             usersOutput.write(s);
         }
