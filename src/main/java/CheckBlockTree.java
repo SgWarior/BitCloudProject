@@ -43,7 +43,7 @@ public class CheckBlockTree extends SimpleFileVisitor {
 
     @Override
     public FileVisitResult postVisitDirectory(Object dir, IOException exc) throws IOException {
-
+        usersOutput.write("In this block detected "+ TrueNewUser.getNewUsersCounter() +" new creators.\n\n");
         for (String s : UpdateProfile.inviteUsersList(TrueNewUser.getNameOfNewUsers())) {
             usersOutput.write(s);
         }

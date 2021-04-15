@@ -10,6 +10,12 @@ public class TrueNewUser {
     private  static HashSet<String> hashOfNewUsers= new HashSet<>();
     private static Path newUsersHashFile = Paths.get("src/main/resources/whales/newUsersHash.txt");
 
+    public static int getNewUsersCounter() {
+        return newUsersCounter;
+    }
+
+    private  static int newUsersCounter = 0;
+
     public static void initialization ()throws IOException  {
         try(BufferedReader reader = new BufferedReader(new FileReader(newUsersHashFile.toFile()))) {
             while (reader.ready()){
@@ -21,6 +27,7 @@ public class TrueNewUser {
     public static void check(BufferedReader reader) throws IOException {
         String merlin="  \"TransactorPublicKeyBase58Check\": \"BC1YLhSkfH28QrMAVkbejMUZELwkAEMwr2FFwhEtofHvzHRtP6rd7s6\",";
         if(reader.readLine().equals(merlin)){
+            newUsersCounter++;
             reader.readLine();reader.readLine();
             String userHash = reader.readLine().replace("      \"PublicKeyBase58Check\": \"", "").replace("\",","");
             hashOfNewUsers.add(userHash);
@@ -42,6 +49,7 @@ public class TrueNewUser {
 
     public static void destroy () throws IOException {
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(newUsersHashFile.toFile()))) {
+            writer.newLine();
             for (String hashOfNewUser : hashOfNewUsers) {
                 writer.write(hashOfNewUser);
                 writer.newLine();
