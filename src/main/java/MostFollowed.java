@@ -25,24 +25,37 @@ public class MostFollowed {
         //TopFollowedUsers
         StringBuilder sb= new StringBuilder();
 
-        if(followedTree.size()>4) {
-        String goldHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String goldName = userNames.changeHashToName(goldHash);
-        int goldTotalNewFollowers = followedTree.get(goldHash);
-        followedTree.remove(goldHash);
+        if(followedTree.size()>6) {
+        String first = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String firstName = userNames.changeHashToName(first);
+        int firstTotalFoll = followedTree.get(first);
+        followedTree.remove(first);
 
-        String silverHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String silverName = userNames.changeHashToName(silverHash);
-        int silverTotalNewFollowers = followedTree.get(silverHash);
-        followedTree.remove(silverHash);
+        String second = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String secondName = userNames.changeHashToName(second);
+        int silverTotalNewFollowers = followedTree.get(second);
+        followedTree.remove(second);
 
-        String bronzeHash = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String bronzeName = userNames.changeHashToName(bronzeHash);
-        int bronzeTotalNewFollowers =  followedTree.get(bronzeHash);
+        String third = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String thirdName = userNames.changeHashToName(third);
+        int bronzeTotalNewFollowers =  followedTree.get(third);
+        followedTree.remove(third);
 
-        sb.append(pr.getProperty("MaxFollBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" followers!\n")
-        .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" followers!\n")
-        .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" followers")
+        String fourth = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String fourthName = userNames.changeHashToName(fourth);
+        int fourthTotalNewFollow = followedTree.get(fourth);
+        followedTree.remove(fourth);
+
+        String fifth = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String fifthhName = userNames.changeHashToName(fifth);
+        int fifthTotalNewFoll = followedTree.get(fifth);
+
+
+        sb.append(pr.getProperty("MaxFollBefore")).append("1-st place: ").append(firstName).append(" with ").append(firstTotalFoll).append(" followers!\n")
+        .append("2-nd place: ").append(secondName).append(" with ").append(silverTotalNewFollowers).append(" followers!\n")
+        .append("3-rd place: ").append(thirdName).append(" with ").append(bronzeTotalNewFollowers).append(" followers!\n")
+        .append("4-rd place: ").append(fourthName).append(" with ").append(fourthTotalNewFollow).append(" followers!\n")
+        .append("5-rd place: ").append(fifthhName).append(" with ").append(fifthTotalNewFoll).append(" followers!\n")
         .append(pr.getProperty("MaxFolAfter"));
         }
 

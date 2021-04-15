@@ -27,23 +27,36 @@ public class MostLike {
         StringBuilder sb= new StringBuilder();
 
         if(likeTree.size()>4) {
-            String goldHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-            String goldName = userNames.changeHashToName(goldHash);
-            int goldTotalNewFollowers = likeTree.get(goldHash);
-            likeTree.remove(goldHash);
+            String first = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String firstName = userNames.changeHashToName(first);
+            int firstLikeTotal = likeTree.get(first);
+            likeTree.remove(first);
 
-            String silverHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-            String silverName = userNames.changeHashToName(silverHash);
-            int silverTotalNewFollowers = likeTree.get(silverHash);
-            likeTree.remove(silverHash);
+            String second = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String secondName = userNames.changeHashToName(second);
+            int secondTotalNewLike = likeTree.get(second);
+            likeTree.remove(second);
 
-            String bronzeHash = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
-            String bronzeName = userNames.changeHashToName(bronzeHash);
-            int bronzeTotalNewFollowers = likeTree.get(bronzeHash);
+            String third = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String thirdName = userNames.changeHashToName(third);
+            int thirdTotalLike = likeTree.get(third);
+            likeTree.remove(third);
 
-            sb.append(pr.getProperty("MaxLikeBefore")).append("Gold price: ").append(goldName).append(" with :").append(goldTotalNewFollowers).append(" likes!\n")
-                    .append("Silver price: ").append(silverName).append(" with :").append(silverTotalNewFollowers).append(" likes!\n")
-                    .append("Bronze price: ").append(bronzeName).append(" with :").append(bronzeTotalNewFollowers).append(" likes")
+            String fourth = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String fourthName = userNames.changeHashToName(fourth);
+            int fourthTotalRaiseLikes = likeTree.get(fourth);
+            likeTree.remove(fourth);
+
+            String fifth = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
+            String fifthhName = userNames.changeHashToName(fifth);
+            int fifthTotalRaseLikes = likeTree.get(fifth);
+
+
+            sb.append(pr.getProperty("MaxLikeBefore")).append("1-st place: ").append(firstName).append(" with ").append(firstLikeTotal).append(" likes!\n")
+                    .append("2-nd place: ").append(secondName).append(" with ").append(secondTotalNewLike).append(" likes!\n")
+                    .append("3-rd place: ").append(thirdName).append(" with ").append(thirdTotalLike).append(" likes!\n")
+                    .append("4-rd place: ").append(fourthName).append(" with ").append(fourthTotalRaiseLikes).append(" likes!\n")
+                    .append("5-rd place: ").append(fifthhName).append(" with ").append(fifthTotalRaseLikes).append(" likes!\n")
                     .append(pr.getProperty("MaxLikeAfter"));
 
         }
