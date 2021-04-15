@@ -113,6 +113,8 @@ public class WhalesDeals
         private String initiator;
         private String target;
         private long  amount;
+        private String dealType;
+
 
         public boolean isBuy() {
             return IsBuy;
@@ -140,10 +142,11 @@ public class WhalesDeals
             this.initiator = initiator;
             this.target = target;
             this.amount = amount;
+            dealType = isBuy() ? " buy " : " sell ";
         }
 
         public String getMessageAboutDeal(){
-            return userNames.changeHashToName(getInitiator())+ " buy " +
+            return userNames.changeHashToName(getInitiator())+ dealType +
                     userNames.changeHashToName(getTarget())+ " for " + getAmountDouble() + " BitClouds";
         }
     }
