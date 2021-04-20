@@ -95,13 +95,15 @@ public class WhalesDeals
         StringBuilder sb= new StringBuilder();
         selfSellMap.entrySet().stream()
                 .sorted(Map.Entry.<String, Double>comparingByValue().reversed())
-                .limit(20)
+                .limit(25)
                 .forEach(entry -> sb
                 .append(userNames.changeHashToName(entry.getKey()))
                 .append(" sold a part of his personal coins in the amount of ")
                 .append(entry.getValue())
-                .append("BitClout."));
+                .append("BitClout.\n"));
         sb.append(pr.getProperty("SkamAlertEnd"));
+
+        sellYourselfF.write(sb.toString());
 
 
        /* for (Map.Entry<String,Double> entry:selfSellMap.entrySet()) {
