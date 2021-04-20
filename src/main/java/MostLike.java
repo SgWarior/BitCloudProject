@@ -32,9 +32,22 @@ public class MostLike {
 
     public static String getThreePlaces() {
         //TopLikedUsers
-        StringBuilder sb= new StringBuilder();
+        StringBuilder sb= new StringBuilder().append(pr.getProperty("MaxLikeBefore"));
 
-        if(likeTree.size()>4) {
+        likeTree.entrySet().stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .limit(10)
+                .forEach(entry -> sb
+                        .append(" : ")
+                        .append(userNames.changeHashToName(entry.getKey()))
+                        .append(" with  ")
+                        .append(entry.getValue())
+                        .append(" likes!")
+                        .append("\n"));
+
+        sb.append(pr.getProperty("MaxLikeAfter"));
+
+      /*  if(likeTree.size()>4) {
             String first = Collections.max(likeTree.entrySet(), Map.Entry.comparingByValue()).getKey();
             String firstName = userNames.changeHashToName(first);
             int firstLikeTotal = likeTree.get(first);
@@ -68,6 +81,9 @@ public class MostLike {
                     .append(pr.getProperty("MaxLikeAfter"));
 
         }
+
+       */
+
         return sb.toString();
 
     }

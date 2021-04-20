@@ -9,17 +9,21 @@ public class CheckBlockTree extends SimpleFileVisitor {
     private BufferedWriter followerOutput;
     private BufferedWriter whalesOutput;
     private BufferedWriter maxVolume;
+    private BufferedWriter newUsersTable;
+    private BufferedWriter sellYourselfF;
 
-
-    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput, BufferedWriter whalesOutput, BufferedWriter maxVolum) {
+    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput, BufferedWriter whalesOutput, BufferedWriter maxVolume, BufferedWriter newUsersTable, BufferedWriter sellYourselfF) {
         this.usersOutput = usersOutput;
         this.followerOutput= followerOutput;
         this.whalesOutput = whalesOutput;
-        this.maxVolume = maxVolum;
+        this.maxVolume = maxVolume;
+        this.newUsersTable = newUsersTable;
+        this.sellYourselfF = sellYourselfF;
     }
 
     @Override
     public FileVisitResult visitFile(Object file, BasicFileAttributes attrs) throws IOException {
+        System.out.println(file.toString());
         if (attrs.isRegularFile()){
             File current = new File(file.toString());
             try(BufferedReader reader = new BufferedReader(new FileReader(current))){
@@ -32,9 +36,9 @@ public class CheckBlockTree extends SimpleFileVisitor {
                         case "CREATOR_COIN":        WhalesDeals.addDeal(reader);break;
                         case "SUBMIT_POST":                                     break;
                         case "LIKE":                  MostLike.addInflu(reader);break;
-                        case "BLOCK_REWARD":                                   break;
-                        case "BITCOIN_EXCHANGE":                               break;
-                        case  "PRIVATE_MESSAGE":                               break;
+                        case "BLOCK_REWARD":                                    break;
+                        case "BITCOIN_EXCHANGE":                                break;
+                        case "PRIVATE_MESSAGE":                                 break;
                     }
                 }
             }
@@ -49,19 +53,16 @@ public class CheckBlockTree extends SimpleFileVisitor {
         usersOutput.write("There are totally "+ MostLike.getLikeInBlock() +" likes in the last 24 hours.\n\n");
 
 
-
-
-
         for (String s : UpdateProfile.inviteUsersList(TrueNewUser.getNameOfNewUsers())) {
             usersOutput.write(s);
         }
 
-          followerOutput.write(MostFollowed.getThreePlaces());
-          followerOutput.newLine();
-          followerOutput.write(MostLike.getThreePlaces());
-          WhalesDeals.writeResultInfile(whalesOutput);
-          WhalesDeals.mostVolumeDealer();
-          WhalesDeals.writeMaxVolumeDealers(maxVolume);
+        followerOutput.write(MostFollowed.getThreePlaces()+"\n");
+        followerOutput.write(MostLike.getThreePlaces());
+
+        WhalesDeals.writeResultInfile(whalesOutput,sellYourselfF);
+        WhalesDeals.mostVolumeDealer();
+        WhalesDeals.writeMaxVolumeDealers(maxVolume);
 
         return FileVisitResult.CONTINUE;
     }

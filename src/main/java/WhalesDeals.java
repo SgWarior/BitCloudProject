@@ -11,6 +11,7 @@ public class WhalesDeals
     static private HashMap<String, Double> sellOut = new HashMap<>();
     static private ArrayList<Deal> listOfBuys= new ArrayList<>();
     static private ArrayList<Deal> listOfSells= new ArrayList<>();
+    static private HashMap<String,Double> selfSellMap = new HashMap<>();
 
     static public void mostVolumeDealer(){
         for(Deal deal : listOfSells){
@@ -19,7 +20,6 @@ public class WhalesDeals
 
         for (Deal deal : listOfBuys) {
             topBuyer.merge(deal.getInitiator(), deal.getAmountDouble(), Double::sum);
-
            if(sellOut.containsKey(deal.getTarget())){
               sellOut.merge(deal.getTarget(), -deal.getAmountDouble(), Double::sum);}
         }
@@ -55,20 +55,25 @@ public class WhalesDeals
         for (int i = 0; i < 11; i++) reader.readLine();
        String operation= reader.readLine().replace("    \"OperationType\": \"","")
                .replace(pr.getProperty("noHashL"),"");
-
-       long amount;
+        Deal deal;
+       long amount=0;
        boolean IsBuy= operation.equals("buy");
        if (IsBuy){ amount = Long.parseLong(reader.readLine()
                .replace("    \"BitCloutToSellNanos\": ","").replace(",",""));
-           listOfBuys.add(new Deal(true, initiator, target, amount));
+           listOfBuys.add(deal=new Deal(true, initiator, target, amount));
        }
-       else if (operation.equals("sell")){reader.readLine();
-                amount = Long.parseLong(reader.readLine()
-               .replace("    \"CreatorCoinToSellNanos\": ","").replace(",",""));
-        listOfSells.add(new Deal(false, initiator, target,amount));}
+       else {
+           reader.readLine();
+           try {
+               amount = Long.parseLong(reader.readLine().replace("    \"CreatorCoinToSellNanos\": ","").replace(",",""));
+
+           }catch (NumberFormatException e){ System.out.println("format error cathing"+initiator);}
+           listOfSells.add(deal=new Deal(false, initiator, target,amount));
+           if(initiator.equals(target)) selfSellMap.merge(initiator, deal.getAmountDouble() , Double::sum);
+       }
     }
 
-    public static void writeResultInfile(BufferedWriter whalesOutput) throws IOException {
+    public static void writeResultInfile(BufferedWriter whalesOutput, BufferedWriter sellYourselfF) throws IOException {
         int counter = 0;
 
         for (Deal whaleList : WhalesDeals.getListOfBuys(Integer.parseInt(pr.getProperty("ResultInWhaleList")))) {
@@ -87,6 +92,26 @@ public class WhalesDeals
         if (counter<3)whalesOutput.write(pr.getProperty("WhaleAfter"));
 
 
+        StringBuilder sb= new StringBuilder();
+        selfSellMap.entrySet().stream()
+                .sorted(Map.Entry.<String, Double>comparingByValue().reversed())
+                .limit(20)
+                .forEach(entry -> sb
+                .append(userNames.changeHashToName(entry.getKey()))
+                .append(" sold a part of his personal coins in the amount of ")
+                .append(entry.getValue())
+                .append("BitClout."));
+        sb.append(pr.getProperty("SkamAlertEnd"));
+
+
+       /* for (Map.Entry<String,Double> entry:selfSellMap.entrySet()) {
+            if (entry.getValue()<2.0)continue;
+            if(counter%3==0) sellYourselfF.write(pr.getProperty("SkamAlertEnd")+"\n");
+            sellYourselfF.write(Main.usersMap.getOrDefault(entry.getKey(), entry.getKey()) + " sold part of his " +
+                    "personal coins in the amount of " + entry.getValue() + " BitClout.\n");
+            counter++;
+        }
+        */
     }
 
     public static void writeMaxVolumeDealers(BufferedWriter maxVolume) throws IOException {

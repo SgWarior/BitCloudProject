@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -29,9 +28,22 @@ public class MostFollowed {
 
     public static String getThreePlaces() {
         //TopFollowedUsers
-        StringBuilder sb= new StringBuilder();
+        StringBuilder sb= new StringBuilder().append(pr.getProperty("MaxFollBefore"));
 
-        if(followedTree.size()>6) {
+        followedTree.entrySet().stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .limit(10)
+                .forEach(entry -> sb
+                        .append(" : ")
+                        .append(userNames.changeHashToName(entry.getKey()))
+                        .append(" with  ")
+                        .append(entry.getValue())
+                        .append(" followers!")
+                        .append("\n"));
+
+        sb.append(pr.getProperty("MaxFolAfter"));
+
+        /*if(followedTree.size()>6) {
         String first = Collections.max(followedTree.entrySet(), Map.Entry.comparingByValue()).getKey();
         String firstName = userNames.changeHashToName(first);
         int firstTotalFoll = followedTree.get(first);
@@ -58,12 +70,14 @@ public class MostFollowed {
 
 
         sb.append(pr.getProperty("MaxFollBefore")).append("1-st place: ").append(firstName).append(" with ").append(firstTotalFoll).append(" followers!\n")
-        .append("2-nd place: ").append(secondName).append(" with ").append(silverTotalNewFollowers).append(" followers!\n")
+        .append("2-nd place: ").append(secondName).append(" with ").append(silverTotalNewFollowers).append(" followers!\n   ")
         .append("3-rd place: ").append(thirdName).append(" with ").append(bronzeTotalNewFollowers).append(" followers!\n")
         .append("4-rd place: ").append(fourthName).append(" with ").append(fourthTotalNewFollow).append(" followers!\n")
         .append("5-rd place: ").append(fifthhName).append(" with ").append(fifthTotalNewFoll).append(" followers!\n")
         .append(pr.getProperty("MaxFolAfter"));
         }
+
+         */
 
         return sb.toString();
 

@@ -1,7 +1,5 @@
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Properties;
@@ -13,24 +11,27 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         pr.load(new FileInputStream(new File("src/main/resources/text.properties")));
-        Date date = new Date();
-        long time  = date.getTime() / 1000000;
+        long time  = new Date().getTime();
 
         userNames.initialization();
         TrueNewUser.initialization();
-        Path start = Paths.get("src/main/resources/Bloks");
+        File start = new File("src/main/resources/Bloks");
 
-        File newUsers          = new File("newUser" + time + ".txt");
-        File whalesOutput       = new File("MwhalesOutput" + time + ".txt");
-        File likesAndFollowers = new File("likesAndFollowers"+time+ ".txt");
+        File newUsers          = new File("NewUsers" + time + ".txt");
+        File whalesOutput       = new File("WhalesDeals" + time + ".txt");
+        File likesAndFollowers = new File("Likes_Follow"+time+ ".txt");
         File maxVolume          = new File("MaxVolume"+time+ ".txt");
+        File NewUsersTable      = new File("newUsersTable"+time+".txt");
+        File sellYourself      = new File("sellYourself"+time+".txt");
 
         try (final BufferedWriter usersOutStream = new BufferedWriter(new FileWriter(newUsers));
-             final BufferedWriter moustFollowedOutStr = new BufferedWriter(new FileWriter(likesAndFollowers));
-             final BufferedWriter whalesOutputStr = new BufferedWriter(new FileWriter(whalesOutput));
-             final BufferedWriter maxVolum = new BufferedWriter(new FileWriter(maxVolume))
+             final BufferedWriter moustFollowedOutF = new BufferedWriter(new FileWriter(likesAndFollowers));
+             final BufferedWriter whalesOutputF = new BufferedWriter(new FileWriter(whalesOutput));
+             final BufferedWriter maxVolumF = new BufferedWriter(new FileWriter(maxVolume));
+             final BufferedWriter newUsersTableF = new BufferedWriter(new FileWriter(NewUsersTable));
+             final BufferedWriter sellYourselfF = new BufferedWriter(new FileWriter(sellYourself))
 ) {
-            Files.walkFileTree(start, new CheckBlockTree(usersOutStream, moustFollowedOutStr, whalesOutputStr, maxVolum));
+            Files.walkFileTree(start.toPath(), new CheckBlockTree(usersOutStream, moustFollowedOutF, whalesOutputF, maxVolumF,newUsersTableF,sellYourselfF));
         }
         TrueNewUser.destroy();
         userNames.destroy();
