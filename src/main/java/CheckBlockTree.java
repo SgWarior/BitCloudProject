@@ -9,15 +9,13 @@ public class CheckBlockTree extends SimpleFileVisitor {
     private BufferedWriter followerOutput;
     private BufferedWriter whalesOutput;
     private BufferedWriter maxVolume;
-    private BufferedWriter newUsersTable;
     private BufferedWriter sellYourselfF;
 
-    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput, BufferedWriter whalesOutput, BufferedWriter maxVolume, BufferedWriter newUsersTable, BufferedWriter sellYourselfF) {
+    public CheckBlockTree(BufferedWriter usersOutput, BufferedWriter followerOutput, BufferedWriter whalesOutput, BufferedWriter maxVolume, BufferedWriter sellYourselfF) {
         this.usersOutput = usersOutput;
         this.followerOutput= followerOutput;
         this.whalesOutput = whalesOutput;
         this.maxVolume = maxVolume;
-        this.newUsersTable = newUsersTable;
         this.sellYourselfF = sellYourselfF;
     }
 

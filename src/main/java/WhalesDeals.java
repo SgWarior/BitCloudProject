@@ -105,15 +105,6 @@ public class WhalesDeals
 
         sellYourselfF.write(sb.toString());
 
-
-       /* for (Map.Entry<String,Double> entry:selfSellMap.entrySet()) {
-            if (entry.getValue()<2.0)continue;
-            if(counter%3==0) sellYourselfF.write(pr.getProperty("SkamAlertEnd")+"\n");
-            sellYourselfF.write(Main.usersMap.getOrDefault(entry.getKey(), entry.getKey()) + " sold part of his " +
-                    "personal coins in the amount of " + entry.getValue() + " BitClout.\n");
-            counter++;
-        }
-        */
     }
 
     public static void writeMaxVolumeDealers(BufferedWriter maxVolume) throws IOException {

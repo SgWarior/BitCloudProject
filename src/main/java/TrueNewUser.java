@@ -6,9 +6,10 @@ import java.util.HashSet;
 
 public class TrueNewUser {
 
-    private  static ArrayList<String> listOfNameNewUsers = new ArrayList();
-    private  static HashSet<String> hashOfNewUsers= new HashSet<>();
+    private static ArrayList<String> listOfNameNewUsers = new ArrayList();
+    private static HashSet<String> hashOfNewUsers= new HashSet<>();
     private static Path newUsersHashFile = Paths.get("src/main/resources/whales/newUsersHash.txt");
+    static File NewUsersTable   = new File("newUsersTable"+ Main.time+".txt");
 
     public static int getNewUsersCounter() {
         return newUsersCounter;
@@ -48,12 +49,18 @@ public class TrueNewUser {
     }
 
     public static void destroy () throws IOException {
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(newUsersHashFile.toFile()))) {
-            writer.newLine();
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(newUsersHashFile.toFile()));
+        BufferedWriter writerTable = new BufferedWriter(new FileWriter(NewUsersTable))) {
             for (String hashOfNewUser : hashOfNewUsers) {
                 writer.write(hashOfNewUser);
                 writer.newLine();
             }
+
+            for (String nameNewUser : listOfNameNewUsers) {
+                writerTable.write(nameNewUser+"\n");
+            }
+
+
         }
     }
 

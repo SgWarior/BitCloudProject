@@ -15,20 +15,6 @@ public class userNames {
         }
     }
 
-    public static void addWhales(String whale, String influincer){
-        Main.usersMap.putIfAbsent(whale, whale);
-        Main.usersMap.putIfAbsent(influincer, whale);
-    }
-
-    public static void writeWhales() throws IOException {
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(userListFile.toFile()))) {
-            for (Map.Entry<String, String> entry : Main.usersMap.entrySet()) {
-                writer.write(entry.getKey()+" "+entry.getValue());
-                writer.newLine();
-            }
-        }
-    }
-
     public static String changeHashToName(String Hash){  //chek here !!!
             return Main.usersMap.getOrDefault(Hash, Hash);
     }
